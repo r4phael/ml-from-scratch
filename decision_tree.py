@@ -3,7 +3,6 @@
 from random import seed
 from random import randrange
 import csv
-import statistics
 
 
 def println(text):
@@ -116,10 +115,10 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
         tp += confusion_matrix(actual, predicted, 1)
         fp += confusion_matrix(actual, predicted, 2)
         fn += confusion_matrix(actual, predicted, 3)
-    mydict["accuracy"] = statistics.mean(scores)
-    mydict["fmeasure"] = ((2 * tp) / (2*tp + fp + fn))
-    mydict["recall"] = tp / (tp + fn)
-    mydict["precision"] = tp / (tp + fp)
+    mydict["accuracy"] = sum(scores) / len(scores)
+    mydict["fmeasure"] = ((2 * tp) / (2 * tp + fp + fn))
+    mydict["recall"] = tp / (tp + fn) if (tp + fn) > 0 else 0
+    mydict["precision"] = tp / (tp + fp) if (tp + fn) > 0 else 0
     return mydict
 
 

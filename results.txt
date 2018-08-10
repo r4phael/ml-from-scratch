@@ -19,7 +19,7 @@ BY DEVELOPER CSV: csv/MM/MM - 41.csv
    [1.0]
    [1.0]
   [1.0]
-Scores: {'recall': 0.125, 'precision': 0.16666666666666666, 'fmeasure': 0.14285714285714285, 'accuracy': 19.999999999999996}
+Scores: {'accuracy': 19.999999999999996, 'recall': 0.125, 'precision': 0.16666666666666666, 'fmeasure': 0.14285714285714285}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 40.csv
 [XCountStmt < 7.000]
@@ -33,7 +33,7 @@ BY DEVELOPER CSV: csv/MM/MM - 40.csv
     [0.0]
     [0.0]
   [1.0]
-Scores: {'recall': 0.6, 'precision': 0.375, 'fmeasure': 0.46153846153846156, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.6, 'precision': 0.375, 'fmeasure': 0.46153846153846156}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 47.csv
 [XCountSemicolon < 17.000]
@@ -53,7 +53,7 @@ BY DEVELOPER CSV: csv/MM/MM - 47.csv
     [0.0]
     [0.0]
   [1.0]
-Scores: {'recall': 0.2222222222222222, 'precision': 0.3333333333333333, 'fmeasure': 0.26666666666666666, 'accuracy': 26.666666666666664}
+Scores: {'accuracy': 26.666666666666664, 'recall': 0.2222222222222222, 'precision': 0.3333333333333333, 'fmeasure': 0.26666666666666666}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 45.csv
 [XCountLineCode < 7.000]
@@ -69,7 +69,7 @@ BY DEVELOPER CSV: csv/MM/MM - 45.csv
   [XAvgCyclomaticModified < 1.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.4444444444444444, 'precision': 0.8, 'fmeasure': 0.5714285714285714, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 60.0, 'recall': 0.4444444444444444, 'precision': 0.8, 'fmeasure': 0.5714285714285714}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 42.csv
 [XCountSemicolon < 17.000]
@@ -91,7 +91,7 @@ BY DEVELOPER CSV: csv/MM/MM - 42.csv
   [XAvgCyclomaticModified < 1.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.4, 'precision': 0.8, 'fmeasure': 0.5333333333333333, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.4, 'precision': 0.8, 'fmeasure': 0.5333333333333333}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 39.csv
 [XCountLineBlank < 32.000]
@@ -107,7 +107,7 @@ BY DEVELOPER CSV: csv/MM/MM - 39.csv
   [XAvgCyclomaticModified < 1.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.8, 'precision': 1.0, 'fmeasure': 0.8888888888888888, 'accuracy': 93.33333333333333}
+Scores: {'accuracy': 93.33333333333333, 'recall': 0.8, 'precision': 1.0, 'fmeasure': 0.8888888888888888}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 74.csv
 [XSumCyclomatic < 1.070]
@@ -127,7 +127,7 @@ BY DEVELOPER CSV: csv/MM/MM - 74.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.2, 'precision': 0.2, 'fmeasure': 0.2, 'accuracy': 46.666666666666664}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.2, 'precision': 0.2, 'fmeasure': 0.2}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 11.csv
 [XAvgLineComment < 6.000]
@@ -153,7 +153,7 @@ BY DEVELOPER CSV: csv/MM/MM - 11.csv
     [0.0]
     [0.0]
    [1.0]
-Scores: {'recall': 0.2, 'precision': 0.16666666666666666, 'fmeasure': 0.18181818181818182, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.99999999999999, 'recall': 0.2, 'precision': 0.16666666666666666, 'fmeasure': 0.18181818181818182}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 8.csv
 [XCountClassCoupled < 2.000]
@@ -171,7 +171,7 @@ BY DEVELOPER CSV: csv/MM/MM - 8.csv
     [1.0]
     [1.0]
    [1.0]
-Scores: {'recall': 0.4, 'precision': 0.5, 'fmeasure': 0.4444444444444444, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.4, 'precision': 0.5, 'fmeasure': 0.4444444444444444}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 43.csv
 [XCountDeclMethodPrivate < 2.000]
@@ -183,7 +183,7 @@ BY DEVELOPER CSV: csv/MM/MM - 43.csv
     [0.0]
     [0.0]
  [1.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 46.csv
 [XCountDeclMethodDefault < 4.000]
@@ -203,7 +203,7 @@ BY DEVELOPER CSV: csv/MM/MM - 46.csv
  [XAvgCyclomaticModified < 1.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.3333333333333333, 'precision': 0.3333333333333333, 'fmeasure': 0.3333333333333333, 'accuracy': 46.66666666666666}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.3333333333333333, 'precision': 0.3333333333333333, 'fmeasure': 0.3333333333333333}
 *********************************************************
 BY DEVELOPER CSV: csv/MM/MM - 81.csv
 [XCountClassDerived < 3.000]
@@ -219,7 +219,7 @@ BY DEVELOPER CSV: csv/MM/MM - 81.csv
    [1.0]
    [1.0]
   [0.0]
-Scores: {'recall': 0.5, 'precision': 0.6, 'fmeasure': 0.5454545454545454, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.5, 'precision': 0.6, 'fmeasure': 0.5454545454545454}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 19.csv
 [XCountLineBlank < 81.000]
@@ -233,7 +233,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 19.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.6363636363636364, 'precision': 1.0, 'fmeasure': 0.7777777777777778, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.6363636363636364, 'precision': 1.0, 'fmeasure': 0.7777777777777778}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 2.csv
 [XAvgLineBlank < 8.640]
@@ -249,7 +249,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 2.csv
     [0.0]
     [0.0]
   [1.0]
-Scores: {'recall': 0.7, 'precision': 0.7777777777777778, 'fmeasure': 0.7368421052631579, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.7, 'precision': 0.7777777777777778, 'fmeasure': 0.7368421052631579}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 77.csv
 [XCountLineBlank < 49.000]
@@ -267,7 +267,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 77.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.7692307692307693, 'precision': 0.8333333333333334, 'fmeasure': 0.8, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.7692307692307693, 'precision': 0.8333333333333334, 'fmeasure': 0.8}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 18.csv
 [XAvgLineBlank < 11.270]
@@ -281,7 +281,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 18.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.8333333333333334, 'precision': 0.9090909090909091, 'fmeasure': 0.8695652173913043, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 0.8333333333333334, 'precision': 0.9090909090909091, 'fmeasure': 0.8695652173913043}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 22.csv
 [XNOAP+NOAM < 3.000]
@@ -297,7 +297,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 22.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.7, 'precision': 0.7777777777777778, 'fmeasure': 0.7368421052631579, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.7, 'precision': 0.7777777777777778, 'fmeasure': 0.7368421052631579}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 93.csv
 [XIntelligentMethods < 1.000]
@@ -313,7 +313,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 93.csv
     [0.0]
     [0.0]
   [1.0]
-Scores: {'recall': 0.7777777777777778, 'precision': 0.875, 'fmeasure': 0.8235294117647058, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 0.7777777777777778, 'precision': 0.875, 'fmeasure': 0.8235294117647058}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 17.csv
 [XCountStmt < 51.000]
@@ -329,7 +329,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 17.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.7272727272727273, 'precision': 0.8888888888888888, 'fmeasure': 0.8, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.7272727272727273, 'precision': 0.8888888888888888, 'fmeasure': 0.8}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 27.csv
 [XCountLineBlank < 55.000]
@@ -343,7 +343,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 27.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 1.0, 'precision': 0.4, 'fmeasure': 0.5714285714285714, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 1.0, 'precision': 0.4, 'fmeasure': 0.5714285714285714}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 86.csv
 [XCountLineBlank < 117.000]
@@ -357,7 +357,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 86.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.7777777777777778, 'precision': 0.7777777777777778, 'fmeasure': 0.7777777777777778, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.7777777777777778, 'precision': 0.7777777777777778, 'fmeasure': 0.7777777777777778}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 104.csv
 [XCountLineBlank < 117.000]
@@ -371,7 +371,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 104.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.7777777777777778, 'precision': 0.7777777777777778, 'fmeasure': 0.7777777777777778, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.7777777777777778, 'precision': 0.7777777777777778, 'fmeasure': 0.7777777777777778}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 30.csv
 [XCountLineComment < 20.000]
@@ -387,7 +387,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 30.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.4, 'precision': 0.4, 'fmeasure': 0.4, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 60.0, 'recall': 0.4, 'precision': 0.4, 'fmeasure': 0.4}
 *********************************************************
 BY DEVELOPER CSV: csv/DCL/DCL - 21.csv
 [XCountLineBlank < 117.000]
@@ -401,7 +401,7 @@ BY DEVELOPER CSV: csv/DCL/DCL - 21.csv
   [XWMCNAMM < 20.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.7777777777777778, 'precision': 0.7777777777777778, 'fmeasure': 0.7777777777777778, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.7777777777777778, 'precision': 0.7777777777777778, 'fmeasure': 0.7777777777777778}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 51.csv
 [XCountClassDerived < 7.000]
@@ -423,7 +423,7 @@ BY DEVELOPER CSV: csv/SG/SG - 51.csv
  [XAvgCyclomaticModified < 1.210]
   [0.0]
   [0.0]
-Scores: {'recall': 0.3333333333333333, 'precision': 0.375, 'fmeasure': 0.35294117647058826, 'accuracy': 26.666666666666664}
+Scores: {'accuracy': 26.666666666666664, 'recall': 0.3333333333333333, 'precision': 0.375, 'fmeasure': 0.35294117647058826}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 52.csv
 [XCountLineCodeDecl < 31.000]
@@ -441,7 +441,7 @@ BY DEVELOPER CSV: csv/SG/SG - 52.csv
     [0.0]
     [0.0]
   [1.0]
-Scores: {'recall': 0.14285714285714285, 'precision': 0.16666666666666666, 'fmeasure': 0.15384615384615385, 'accuracy': 26.666666666666664}
+Scores: {'accuracy': 26.666666666666664, 'recall': 0.14285714285714285, 'precision': 0.16666666666666666, 'fmeasure': 0.15384615384615385}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 53.csv
 [XCountDeclClassMethod < 1.000]
@@ -457,7 +457,7 @@ BY DEVELOPER CSV: csv/SG/SG - 53.csv
     [1.0]
     [1.0]
    [0.0]
-Scores: {'recall': 0.125, 'precision': 0.2, 'fmeasure': 0.15384615384615385, 'accuracy': 26.666666666666664}
+Scores: {'accuracy': 26.666666666666664, 'recall': 0.125, 'precision': 0.2, 'fmeasure': 0.15384615384615385}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 5.csv
 [XCountDeclMethodPublic < 1.000]
@@ -477,7 +477,7 @@ BY DEVELOPER CSV: csv/SG/SG - 5.csv
   [XAvgCyclomaticModified < 1.320]
    [0.0]
    [0.0]
-Scores: {'recall': 0.2, 'precision': 0.4, 'fmeasure': 0.26666666666666666, 'accuracy': 26.666666666666664}
+Scores: {'accuracy': 26.666666666666664, 'recall': 0.2, 'precision': 0.4, 'fmeasure': 0.26666666666666666}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 91.csv
 [XCountSemicolon < 45.000]
@@ -499,7 +499,7 @@ BY DEVELOPER CSV: csv/SG/SG - 91.csv
   [XAvgCyclomaticModified < 1.320]
    [1.0]
    [1.0]
-Scores: {'recall': 0.5, 'precision': 0.25, 'fmeasure': 0.3333333333333333, 'accuracy': 46.666666666666664}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.5, 'precision': 0.25, 'fmeasure': 0.3333333333333333}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 55.csv
 [XAvgLineCode < 0.200]
@@ -517,7 +517,7 @@ BY DEVELOPER CSV: csv/SG/SG - 55.csv
  [XAvgCyclomaticModified < 2.270]
   [0.0]
   [0.0]
-Scores: {'recall': 0.7, 'precision': 0.7777777777777778, 'fmeasure': 0.7368421052631579, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.7, 'precision': 0.7777777777777778, 'fmeasure': 0.7368421052631579}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 49.csv
 [XCountStmtExe < 31.000]
@@ -533,7 +533,7 @@ BY DEVELOPER CSV: csv/SG/SG - 49.csv
  [XAvgCyclomaticModified < 1.320]
   [1.0]
   [1.0]
-Scores: {'recall': 0.3333333333333333, 'precision': 0.2857142857142857, 'fmeasure': 0.3076923076923077, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.999999999999986, 'recall': 0.3333333333333333, 'precision': 0.2857142857142857, 'fmeasure': 0.3076923076923077}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 105.csv
 [XCountLineBlank < 259.000]
@@ -543,7 +543,7 @@ BY DEVELOPER CSV: csv/SG/SG - 105.csv
  [XAvgCyclomaticModified < 2.330]
   [1.0]
   [1.0]
-Scores: {'recall': 1.0, 'precision': 0.5, 'fmeasure': 0.6666666666666666, 'accuracy': 93.33333333333333}
+Scores: {'accuracy': 93.33333333333333, 'recall': 1.0, 'precision': 0.5, 'fmeasure': 0.6666666666666666}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 64.csv
 [XCountLineCodeDecl < 38.000]
@@ -561,7 +561,7 @@ BY DEVELOPER CSV: csv/SG/SG - 64.csv
   [XAvgCyclomaticModified < 1.320]
    [1.0]
    [1.0]
-Scores: {'recall': 0.7142857142857143, 'precision': 0.45454545454545453, 'fmeasure': 0.5555555555555556, 'accuracy': 46.666666666666664}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.7142857142857143, 'precision': 0.45454545454545453, 'fmeasure': 0.5555555555555556}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 56.csv
 [XCountLineCodeDecl < 38.000]
@@ -575,7 +575,7 @@ BY DEVELOPER CSV: csv/SG/SG - 56.csv
   [XAvgCyclomaticModified < 1.320]
    [0.0]
    [0.0]
-Scores: {'recall': 0.5, 'precision': 0.6, 'fmeasure': 0.5454545454545454, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.5, 'precision': 0.6, 'fmeasure': 0.5454545454545454}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 99.csv
 [XSmell < 6.000]
@@ -593,7 +593,7 @@ BY DEVELOPER CSV: csv/SG/SG - 99.csv
   [XAvgCyclomaticModified < 1.320]
    [0.0]
    [0.0]
-Scores: {'recall': 0.16666666666666666, 'precision': 0.14285714285714285, 'fmeasure': 0.15384615384615385, 'accuracy': 26.666666666666664}
+Scores: {'accuracy': 26.666666666666664, 'recall': 0.16666666666666666, 'precision': 0.14285714285714285, 'fmeasure': 0.15384615384615385}
 *********************************************************
 BY DEVELOPER CSV: csv/SG/SG - 95.csv
 [XCountDeclInstanceVariable < 11.000]
@@ -605,7 +605,7 @@ BY DEVELOPER CSV: csv/SG/SG - 95.csv
   [XAvgCyclomaticModified < 1.320]
    [1.0]
    [1.0]
-Scores: {'recall': 1.0, 'precision': 0.5, 'fmeasure': 0.6666666666666666, 'accuracy': 86.66666666666666}
+Scores: {'accuracy': 86.66666666666666, 'recall': 1.0, 'precision': 0.5, 'fmeasure': 0.6666666666666666}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 103.csv
 [XAvgLineComment < 7.170]
@@ -617,7 +617,7 @@ BY DEVELOPER CSV: csv/GC/GC - 103.csv
   [Xatfd < 7.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.6666666666666666, 'precision': 0.5714285714285714, 'fmeasure': 0.6153846153846154, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.6666666666666666, 'precision': 0.5714285714285714, 'fmeasure': 0.6153846153846154}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 16.csv
 [Xatfd < 101.000]
@@ -631,7 +631,7 @@ BY DEVELOPER CSV: csv/GC/GC - 16.csv
   [Xatfd < 191.000]
    [1.0]
    [1.0]
-Scores: {'recall': 1.0, 'precision': 1.0, 'fmeasure': 1.0, 'accuracy': 100.0}
+Scores: {'accuracy': 100.0, 'recall': 1.0, 'precision': 1.0, 'fmeasure': 1.0}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 94.csv
 [XCountSemicolon < 37.000]
@@ -649,7 +649,7 @@ BY DEVELOPER CSV: csv/GC/GC - 94.csv
   [Xatfd < 191.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.7142857142857143, 'precision': 0.7142857142857143, 'fmeasure': 0.7142857142857143, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.7142857142857143, 'precision': 0.7142857142857143, 'fmeasure': 0.7142857142857143}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 84.csv
 [XCountDeclMethodPrivate < 1.000]
@@ -667,7 +667,7 @@ BY DEVELOPER CSV: csv/GC/GC - 84.csv
    [Xatfd < 101.000]
     [1.0]
     [1.0]
-Scores: {'recall': 0.42857142857142855, 'precision': 0.6, 'fmeasure': 0.5, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.42857142857142855, 'precision': 0.6, 'fmeasure': 0.5}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 66.csv
 [XAvgCyclomaticStrict < 2.920]
@@ -679,7 +679,7 @@ BY DEVELOPER CSV: csv/GC/GC - 66.csv
   [Xatfd < 191.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.6666666666666666, 'precision': 0.6666666666666666, 'fmeasure': 0.6666666666666666, 'accuracy': 86.66666666666666}
+Scores: {'accuracy': 86.66666666666666, 'recall': 0.6666666666666666, 'precision': 0.6666666666666666, 'fmeasure': 0.6666666666666666}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 9.csv
 [Xatfd < 101.000]
@@ -693,7 +693,7 @@ BY DEVELOPER CSV: csv/GC/GC - 9.csv
   [Xatfd < 191.000]
    [1.0]
    [1.0]
-Scores: {'recall': 1.0, 'precision': 1.0, 'fmeasure': 1.0, 'accuracy': 100.0}
+Scores: {'accuracy': 100.0, 'recall': 1.0, 'precision': 1.0, 'fmeasure': 1.0}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 102.csv
 [XCountDeclMethodPublic < 1.000]
@@ -709,7 +709,7 @@ BY DEVELOPER CSV: csv/GC/GC - 102.csv
  [Xatfd < 11.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 15.csv
 [XWMCNAMM < 0.010]
@@ -723,7 +723,7 @@ BY DEVELOPER CSV: csv/GC/GC - 15.csv
    [0.0]
    [0.0]
   [1.0]
-Scores: {'recall': 0.25, 'precision': 0.2, 'fmeasure': 0.2222222222222222, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.25, 'precision': 0.2, 'fmeasure': 0.2222222222222222}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 61.csv
 [XSumCyclomatic < 0.200]
@@ -739,7 +739,7 @@ BY DEVELOPER CSV: csv/GC/GC - 61.csv
     [1.0]
    [1.0]
   [0.0]
-Scores: {'recall': 0.25, 'precision': 0.25, 'fmeasure': 0.25, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.25, 'precision': 0.25, 'fmeasure': 0.25}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 62.csv
 [Xatfd < 104.000]
@@ -759,7 +759,7 @@ BY DEVELOPER CSV: csv/GC/GC - 62.csv
   [Xatfd < 191.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.2857142857142857, 'precision': 0.3333333333333333, 'fmeasure': 0.3076923076923077, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.999999999999986, 'recall': 0.2857142857142857, 'precision': 0.3333333333333333, 'fmeasure': 0.3076923076923077}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 13.csv
 [XCountLineCodeExe < 120.000]
@@ -771,7 +771,7 @@ BY DEVELOPER CSV: csv/GC/GC - 13.csv
  [Xatfd < 28.000]
   [1.0]
   [1.0]
-Scores: {'recall': 0.5, 'precision': 0.6, 'fmeasure': 0.5454545454545454, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.5, 'precision': 0.6, 'fmeasure': 0.5454545454545454}
 *********************************************************
 BY DEVELOPER CSV: csv/GC/GC - 1.csv
 [XInnerClass < 100.000]
@@ -785,7 +785,7 @@ BY DEVELOPER CSV: csv/GC/GC - 1.csv
   [Xatfd < 191.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.6666666666666666, 'precision': 0.5, 'fmeasure': 0.5714285714285714, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 0.6666666666666666, 'precision': 0.5, 'fmeasure': 0.5714285714285714}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 28.csv
 [XMaxNesting < 5.000]
@@ -805,7 +805,7 @@ BY DEVELOPER CSV: csv/SS/SS - 28.csv
     [1.0]
    [1.0]
   [1.0]
-Scores: {'recall': 0.6, 'precision': 0.3, 'fmeasure': 0.4, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.99999999999999, 'recall': 0.6, 'precision': 0.3, 'fmeasure': 0.4}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 92.csv
 [XCountInput < 7.000]
@@ -819,7 +819,7 @@ BY DEVELOPER CSV: csv/SS/SS - 92.csv
     [1.0]
    [1.0]
   [1.0]
-Scores: {'recall': 0.9166666666666666, 'precision': 0.7857142857142857, 'fmeasure': 0.8461538461538461, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.9166666666666666, 'precision': 0.7857142857142857, 'fmeasure': 0.8461538461538461}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 69.csv
 [XCountLineCode < 55.000]
@@ -835,7 +835,7 @@ BY DEVELOPER CSV: csv/SS/SS - 69.csv
     [0.0]
     [0.0]
  [1.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 46.666666666666664}
+Scores: {'accuracy': 46.66666666666666, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 31.csv
 [XCountInput < 8.000]
@@ -851,7 +851,7 @@ BY DEVELOPER CSV: csv/SS/SS - 31.csv
     [1.0]
    [1.0]
   [0.0]
-Scores: {'recall': 0.8, 'precision': 0.6666666666666666, 'fmeasure': 0.7272727272727273, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 60.0, 'recall': 0.8, 'precision': 0.6666666666666666, 'fmeasure': 0.7272727272727273}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 96.csv
 [XCountOutput < 17.000]
@@ -873,7 +873,7 @@ BY DEVELOPER CSV: csv/SS/SS - 96.csv
     [1.0]
    [1.0]
   [1.0]
-Scores: {'recall': 0.6666666666666666, 'precision': 0.6666666666666666, 'fmeasure': 0.6666666666666666, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.6666666666666666, 'precision': 0.6666666666666666, 'fmeasure': 0.6666666666666666}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 7.csv
 [XCountInput < 6.000]
@@ -887,7 +887,7 @@ BY DEVELOPER CSV: csv/SS/SS - 7.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.6666666666666666, 'precision': 0.5, 'fmeasure': 0.5714285714285714, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.999999999999986, 'recall': 0.6666666666666666, 'precision': 0.5, 'fmeasure': 0.5714285714285714}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 106.csv
 [XCountLineBlank < 90.000]
@@ -905,7 +905,7 @@ BY DEVELOPER CSV: csv/SS/SS - 106.csv
     [1.0]
    [1.0]
   [1.0]
-Scores: {'recall': 1.0, 'precision': 0.8888888888888888, 'fmeasure': 0.9411764705882353, 'accuracy': 93.33333333333333}
+Scores: {'accuracy': 93.33333333333333, 'recall': 1.0, 'precision': 0.8888888888888888, 'fmeasure': 0.9411764705882353}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 32.csv
 [XCountLineBlank < 41.000]
@@ -925,7 +925,7 @@ BY DEVELOPER CSV: csv/SS/SS - 32.csv
     [0.0]
     [0.0]
    [1.0]
-Scores: {'recall': 0.7, 'precision': 0.7, 'fmeasure': 0.7, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.7, 'precision': 0.7, 'fmeasure': 0.7}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 107.csv
 [XCountLineCodeExe < 6.000]
@@ -949,7 +949,7 @@ BY DEVELOPER CSV: csv/SS/SS - 107.csv
    [XCountInput < 43.000]
     [1.0]
     [1.0]
-Scores: {'recall': 0.8, 'precision': 0.4444444444444444, 'fmeasure': 0.5714285714285714, 'accuracy': 60.0}
+Scores: {'accuracy': 60.0, 'recall': 0.8, 'precision': 0.4444444444444444, 'fmeasure': 0.5714285714285714}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 25.csv
 [XCountLineCode < 10.000]
@@ -967,7 +967,7 @@ BY DEVELOPER CSV: csv/SS/SS - 25.csv
     [1.0]
    [1.0]
   [1.0]
-Scores: {'recall': 0.25, 'precision': 0.2, 'fmeasure': 0.2222222222222222, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.25, 'precision': 0.2, 'fmeasure': 0.2222222222222222}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 86.csv
 [XCountInput < 6.000]
@@ -981,7 +981,7 @@ BY DEVELOPER CSV: csv/SS/SS - 86.csv
     [1.0]
     [1.0]
    [1.0]
-Scores: {'recall': 0.8181818181818182, 'precision': 0.6923076923076923, 'fmeasure': 0.75, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 60.0, 'recall': 0.8181818181818182, 'precision': 0.6923076923076923, 'fmeasure': 0.75}
 *********************************************************
 BY DEVELOPER CSV: csv/SS/SS - 2.csv
 [XCountInput < 21.000]
@@ -999,7 +999,7 @@ BY DEVELOPER CSV: csv/SS/SS - 2.csv
     [1.0]
    [1.0]
   [0.0]
-Scores: {'recall': 0.75, 'precision': 0.5, 'fmeasure': 0.6, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.75, 'precision': 0.5, 'fmeasure': 0.6}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 95.csv
 [XCountLineCodeDecl < 50.000]
@@ -1023,7 +1023,7 @@ BY DEVELOPER CSV: csv/LM/LM - 95.csv
   [Xmloc < 21.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.5, 'precision': 0.375, 'fmeasure': 0.42857142857142855, 'accuracy': 46.66666666666666}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.5, 'precision': 0.375, 'fmeasure': 0.42857142857142855}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 43.csv
 [XCyclomatic < 32.000]
@@ -1043,7 +1043,7 @@ BY DEVELOPER CSV: csv/LM/LM - 43.csv
    [Xmloc < 13.000]
     [1.0]
     [1.0]
-Scores: {'recall': 0.6, 'precision': 0.375, 'fmeasure': 0.46153846153846156, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.6, 'precision': 0.375, 'fmeasure': 0.46153846153846156}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 42.csv
 [XCountStmt < 26.000]
@@ -1063,7 +1063,7 @@ BY DEVELOPER CSV: csv/LM/LM - 42.csv
   [Xmloc < 21.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.9090909090909091, 'precision': 0.8333333333333334, 'fmeasure': 0.8695652173913043, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 0.9090909090909091, 'precision': 0.8333333333333334, 'fmeasure': 0.8695652173913043}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 46.csv
 [XCountLineComment < 44.000]
@@ -1079,7 +1079,7 @@ BY DEVELOPER CSV: csv/LM/LM - 46.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.7777777777777778, 'precision': 0.875, 'fmeasure': 0.8235294117647058, 'accuracy': 80.0}
+Scores: {'accuracy': 79.99999999999999, 'recall': 0.7777777777777778, 'precision': 0.875, 'fmeasure': 0.8235294117647058}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 41.csv
 [Xmloc < 9.000]
@@ -1095,7 +1095,7 @@ BY DEVELOPER CSV: csv/LM/LM - 41.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.75, 'precision': 0.9, 'fmeasure': 0.8181818181818182, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.75, 'precision': 0.9, 'fmeasure': 0.8181818181818182}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 74.csv
 [XCountLineComment < 44.000]
@@ -1113,7 +1113,7 @@ BY DEVELOPER CSV: csv/LM/LM - 74.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.6363636363636364, 'precision': 0.7777777777777778, 'fmeasure': 0.7, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.6363636363636364, 'precision': 0.7777777777777778, 'fmeasure': 0.7}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 64.csv
 [XCountLineCodeDecl < 48.000]
@@ -1135,7 +1135,7 @@ BY DEVELOPER CSV: csv/LM/LM - 64.csv
   [Xmloc < 21.000]
    [1.0]
    [1.0]
-Scores: {'recall': 1.0, 'precision': 0.8181818181818182, 'fmeasure': 0.9, 'accuracy': 86.66666666666666}
+Scores: {'accuracy': 86.66666666666666, 'recall': 1.0, 'precision': 0.8181818181818182, 'fmeasure': 0.9}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 49.csv
 [XCountLineCodeDecl < 72.000]
@@ -1159,7 +1159,7 @@ BY DEVELOPER CSV: csv/LM/LM - 49.csv
     [0.0]
     [0.0]
    [1.0]
-Scores: {'recall': 0.7142857142857143, 'precision': 0.8333333333333334, 'fmeasure': 0.7692307692307693, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 0.7142857142857143, 'precision': 0.8333333333333334, 'fmeasure': 0.7692307692307693}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 81.csv
 [XCountLineBlank < 159.000]
@@ -1179,7 +1179,7 @@ BY DEVELOPER CSV: csv/LM/LM - 81.csv
    [0.0]
    [0.0]
   [0.0]
-Scores: {'recall': 0.6666666666666666, 'precision': 0.8888888888888888, 'fmeasure': 0.7619047619047619, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.6666666666666666, 'precision': 0.8888888888888888, 'fmeasure': 0.7619047619047619}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 51.csv
 [XCountLineCodeExe < 8.000]
@@ -1197,7 +1197,7 @@ BY DEVELOPER CSV: csv/LM/LM - 51.csv
     [1.0]
     [1.0]
    [0.0]
-Scores: {'recall': 0.8181818181818182, 'precision': 1.0, 'fmeasure': 0.9, 'accuracy': 86.66666666666667}
+Scores: {'accuracy': 86.66666666666666, 'recall': 0.8181818181818182, 'precision': 1.0, 'fmeasure': 0.9}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 45.csv
 [XCyclomatic < 32.000]
@@ -1215,7 +1215,7 @@ BY DEVELOPER CSV: csv/LM/LM - 45.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.625, 'precision': 0.5, 'fmeasure': 0.5555555555555556, 'accuracy': 46.66666666666666}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.625, 'precision': 0.5, 'fmeasure': 0.5555555555555556}
 *********************************************************
 BY DEVELOPER CSV: csv/LM/LM - 47.csv
 [XCyclomatic < 32.000]
@@ -1235,7 +1235,7 @@ BY DEVELOPER CSV: csv/LM/LM - 47.csv
   [Xmloc < 21.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.7777777777777778, 'precision': 0.6363636363636364, 'fmeasure': 0.7, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.7777777777777778, 'precision': 0.6363636363636364, 'fmeasure': 0.7}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 101.csv
 [XCountLineComment < 6.000]
@@ -1263,7 +1263,7 @@ BY DEVELOPER CSV: csv/MC/MC - 101.csv
     [1.0]
     [1.0]
    [1.0]
-Scores: {'recall': 0.5, 'precision': 0.3, 'fmeasure': 0.375, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.5, 'precision': 0.3, 'fmeasure': 0.375}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 99.csv
 [XCountInput < 5.000]
@@ -1283,7 +1283,7 @@ BY DEVELOPER CSV: csv/MC/MC - 99.csv
     [1.0]
     [1.0]
    [0.0]
-Scores: {'recall': 0.42857142857142855, 'precision': 0.5, 'fmeasure': 0.46153846153846156, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.42857142857142855, 'precision': 0.5, 'fmeasure': 0.46153846153846156}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 53.csv
 [XCountLineCodeExe < 2.000]
@@ -1303,7 +1303,7 @@ BY DEVELOPER CSV: csv/MC/MC - 53.csv
   [XCountInput < 9.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 97.csv
 [XCountStmt < 3.000]
@@ -1327,7 +1327,7 @@ BY DEVELOPER CSV: csv/MC/MC - 97.csv
   [XCountInput < 4.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.5, 'precision': 0.4444444444444444, 'fmeasure': 0.47058823529411764, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.99999999999999, 'recall': 0.5, 'precision': 0.4444444444444444, 'fmeasure': 0.47058823529411764}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 52.csv
 [XCountInput < 9.000]
@@ -1343,7 +1343,7 @@ BY DEVELOPER CSV: csv/MC/MC - 52.csv
  [XCountInput < 9.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.9166666666666666, 'precision': 1.0, 'fmeasure': 0.9565217391304348, 'accuracy': 93.33333333333333}
+Scores: {'accuracy': 93.33333333333333, 'recall': 0.9166666666666666, 'precision': 1.0, 'fmeasure': 0.9565217391304348}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 91.csv
 [XCountStmt < 6.000]
@@ -1367,7 +1367,7 @@ BY DEVELOPER CSV: csv/MC/MC - 91.csv
     [0.0]
     [0.0]
   [1.0]
-Scores: {'recall': 0.5, 'precision': 0.4, 'fmeasure': 0.4444444444444444, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.5, 'precision': 0.4, 'fmeasure': 0.4444444444444444}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 10.csv
 [XMaxNesting < 12.000]
@@ -1385,7 +1385,7 @@ BY DEVELOPER CSV: csv/MC/MC - 10.csv
     [0.0]
     [0.0]
  [1.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 58.csv
 [XCountLine < 6.000]
@@ -1409,7 +1409,7 @@ BY DEVELOPER CSV: csv/MC/MC - 58.csv
   [XCountInput < 9.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 5.csv
 [XRatioCommentToCode < 2.000]
@@ -1431,7 +1431,7 @@ BY DEVELOPER CSV: csv/MC/MC - 5.csv
     [1.0]
    [1.0]
   [0.0]
-Scores: {'recall': 0.7142857142857143, 'precision': 0.8333333333333334, 'fmeasure': 0.7692307692307693, 'accuracy': 80.0}
+Scores: {'accuracy': 79.99999999999997, 'recall': 0.7142857142857143, 'precision': 0.8333333333333334, 'fmeasure': 0.7692307692307693}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 6.csv
 [XCountLine < 6.000]
@@ -1455,7 +1455,7 @@ BY DEVELOPER CSV: csv/MC/MC - 6.csv
   [XCountInput < 9.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.7692307692307693, 'precision': 0.8333333333333334, 'fmeasure': 0.8, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.7692307692307693, 'precision': 0.8333333333333334, 'fmeasure': 0.8}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 55.csv
 [XCountLineCodeExe < 2.000]
@@ -1477,7 +1477,7 @@ BY DEVELOPER CSV: csv/MC/MC - 55.csv
     [1.0]
     [0.0]
    [0.0]
-Scores: {'recall': 0.3333333333333333, 'precision': 0.3333333333333333, 'fmeasure': 0.3333333333333333, 'accuracy': 19.999999999999996}
+Scores: {'accuracy': 19.999999999999996, 'recall': 0.3333333333333333, 'precision': 0.3333333333333333, 'fmeasure': 0.3333333333333333}
 *********************************************************
 BY DEVELOPER CSV: csv/MC/MC - 60.csv
 [XCountOutput < 5.000]
@@ -1503,7 +1503,7 @@ BY DEVELOPER CSV: csv/MC/MC - 60.csv
     [1.0]
    [1.0]
   [0.0]
-Scores: {'recall': 0.3333333333333333, 'precision': 0.25, 'fmeasure': 0.2857142857142857, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.3333333333333333, 'precision': 0.25, 'fmeasure': 0.2857142857142857}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 13.csv
 [XACountLineBlank < 351.000]
@@ -1525,7 +1525,7 @@ BY DEVELOPER CSV: csv/RB/RB - 13.csv
    [XAAvgCyclomaticModified < 5.520]
     [0.0]
     [0.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 17.csv
 [XACountClassCoupled < 2.000]
@@ -1547,7 +1547,7 @@ BY DEVELOPER CSV: csv/RB/RB - 17.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 46.66666666666666}
+Scores: {'accuracy': 46.66666666666666, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 19.csv
 [XACountClassCoupled < 2.000]
@@ -1567,7 +1567,7 @@ BY DEVELOPER CSV: csv/RB/RB - 19.csv
   [XAAvgCyclomaticModified < 3.620]
    [0.0]
    [0.0]
-Scores: {'recall': 0.5, 'precision': 0.4444444444444444, 'fmeasure': 0.47058823529411764, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.99999999999999, 'recall': 0.5, 'precision': 0.4444444444444444, 'fmeasure': 0.47058823529411764}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 15.csv
 [XACountClassDerived < 16.000]
@@ -1585,7 +1585,7 @@ BY DEVELOPER CSV: csv/RB/RB - 15.csv
   [XAAvgCyclomaticModified < 7.720]
    [0.0]
    [0.0]
-Scores: {'recall': 0.7, 'precision': 0.875, 'fmeasure': 0.7777777777777778, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.7, 'precision': 0.875, 'fmeasure': 0.7777777777777778}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 61.csv
 [XAMaxCyclomaticStrict < 41.000]
@@ -1607,7 +1607,7 @@ BY DEVELOPER CSV: csv/RB/RB - 61.csv
   [XAAvgCyclomaticModified < 7.720]
    [0.0]
    [0.0]
-Scores: {'recall': 0.375, 'precision': 0.42857142857142855, 'fmeasure': 0.4, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.999999999999986, 'recall': 0.375, 'precision': 0.42857142857142855, 'fmeasure': 0.4}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 94.csv
 [XACountLineBlank < 464.000]
@@ -1631,7 +1631,7 @@ BY DEVELOPER CSV: csv/RB/RB - 94.csv
   [XAAvgCyclomaticModified < 7.720]
    [1.0]
    [1.0]
-Scores: {'recall': 0.4444444444444444, 'precision': 0.5, 'fmeasure': 0.47058823529411764, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.99999999999999, 'recall': 0.4444444444444444, 'precision': 0.5, 'fmeasure': 0.47058823529411764}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 112.csv
 [XACountDeclMethodDefault < 50.000]
@@ -1651,7 +1651,7 @@ BY DEVELOPER CSV: csv/RB/RB - 112.csv
   [XAAvgCyclomaticModified < 7.720]
    [0.0]
    [0.0]
-Scores: {'recall': 0.5, 'precision': 0.5, 'fmeasure': 0.5, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.5, 'precision': 0.5, 'fmeasure': 0.5}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 30.csv
 [XAMaxCyclomaticStrict < 28.000]
@@ -1673,7 +1673,7 @@ BY DEVELOPER CSV: csv/RB/RB - 30.csv
   [XAAvgCyclomaticModified < 7.720]
    [0.0]
    [0.0]
-Scores: {'recall': 0.7777777777777778, 'precision': 0.875, 'fmeasure': 0.8235294117647058, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 0.7777777777777778, 'precision': 0.875, 'fmeasure': 0.8235294117647058}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 102.csv
 [XAMaxCyclomaticModified < 41.000]
@@ -1695,7 +1695,7 @@ BY DEVELOPER CSV: csv/RB/RB - 102.csv
   [XAAvgCyclomaticModified < 7.720]
    [0.0]
    [0.0]
-Scores: {'recall': 0.75, 'precision': 0.8571428571428571, 'fmeasure': 0.8, 'accuracy': 80.0}
+Scores: {'accuracy': 79.99999999999999, 'recall': 0.75, 'precision': 0.8571428571428571, 'fmeasure': 0.8}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 18.csv
 [XBAvgCyclomaticModified < 2.570]
@@ -1713,7 +1713,7 @@ BY DEVELOPER CSV: csv/RB/RB - 18.csv
   [XAAvgCyclomaticModified < 5.520]
    [0.0]
    [0.0]
-Scores: {'recall': 0.5555555555555556, 'precision': 0.5555555555555556, 'fmeasure': 0.5555555555555556, 'accuracy': 46.666666666666664}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.5555555555555556, 'precision': 0.5555555555555556, 'fmeasure': 0.5555555555555556}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 111.csv
 [XACountLine < 15.000]
@@ -1731,7 +1731,7 @@ BY DEVELOPER CSV: csv/RB/RB - 111.csv
     [0.0]
     [0.0]
    [0.0]
-Scores: {'recall': 0.9090909090909091, 'precision': 0.9090909090909091, 'fmeasure': 0.9090909090909091, 'accuracy': 86.66666666666666}
+Scores: {'accuracy': 86.66666666666666, 'recall': 0.9090909090909091, 'precision': 0.9090909090909091, 'fmeasure': 0.9090909090909091}
 *********************************************************
 BY DEVELOPER CSV: csv/RB/RB - 16.csv
 [XACountLineBlank < 409.000]
@@ -1749,7 +1749,7 @@ BY DEVELOPER CSV: csv/RB/RB - 16.csv
     [1.0]
     [1.0]
    [0.0]
-Scores: {'recall': 0.5, 'precision': 0.4444444444444444, 'fmeasure': 0.47058823529411764, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.99999999999999, 'recall': 0.5, 'precision': 0.4444444444444444, 'fmeasure': 0.47058823529411764}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 22.csv
 [XACountClassDerived < 1.000]
@@ -1763,7 +1763,7 @@ BY DEVELOPER CSV: csv/II/II - 22.csv
     [1.0]
     [0.0]
   [1.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 46.666666666666664}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 25.csv
 [XBCountDeclInstanceVariable < 16.000]
@@ -1783,7 +1783,7 @@ BY DEVELOPER CSV: csv/II/II - 25.csv
    [XAAvgCyclomaticModified < 3.280]
     [0.0]
     [0.0]
-Scores: {'recall': 0.4, 'precision': 0.5, 'fmeasure': 0.4444444444444444, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.4, 'precision': 0.5, 'fmeasure': 0.4444444444444444}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 2.csv
 [XBAvgCyclomaticModified < 3.880]
@@ -1801,7 +1801,7 @@ BY DEVELOPER CSV: csv/II/II - 2.csv
   [XAAvgCyclomaticModified < 3.200]
    [0.0]
    [0.0]
-Scores: {'recall': 0.5555555555555556, 'precision': 0.625, 'fmeasure': 0.5882352941176471, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.5555555555555556, 'precision': 0.625, 'fmeasure': 0.5882352941176471}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 110.csv
 [XAAvgLineCode < 1.550]
@@ -1819,7 +1819,7 @@ BY DEVELOPER CSV: csv/II/II - 110.csv
   [XAAvgCyclomaticModified < 3.280]
    [1.0]
    [1.0]
-Scores: {'recall': 0.5, 'precision': 0.625, 'fmeasure': 0.5555555555555556, 'accuracy': 46.66666666666666}
+Scores: {'accuracy': 46.66666666666666, 'recall': 0.5, 'precision': 0.625, 'fmeasure': 0.5555555555555556}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 24.csv
 [XBPercentLackOfCohesion < 5.000]
@@ -1835,7 +1835,7 @@ BY DEVELOPER CSV: csv/II/II - 24.csv
    [XAAvgCyclomaticModified < 3.280]
     [1.0]
     [1.0]
-Scores: {'recall': 0.5, 'precision': 0.6, 'fmeasure': 0.5454545454545454, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.5, 'precision': 0.6, 'fmeasure': 0.5454545454545454}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 7.csv
 [XBSumCyclomatic < 0.710]
@@ -1849,7 +1849,7 @@ BY DEVELOPER CSV: csv/II/II - 7.csv
  [XAAvgCyclomaticModified < 2.260]
   [1.0]
   [1.0]
-Scores: {'recall': 0.5, 'precision': 0.14285714285714285, 'fmeasure': 0.2222222222222222, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.5, 'precision': 0.14285714285714285, 'fmeasure': 0.2222222222222222}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 111.csv
 [XBAvgCyclomaticModified < 2.710]
@@ -1867,7 +1867,7 @@ BY DEVELOPER CSV: csv/II/II - 111.csv
  [XAAvgCyclomaticModified < 1.000]
   [1.0]
   [1.0]
-Scores: {'recall': 0.8571428571428571, 'precision': 0.6666666666666666, 'fmeasure': 0.75, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.8571428571428571, 'precision': 0.6666666666666666, 'fmeasure': 0.75}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 21.csv
 [XACountLineCode < 110.000]
@@ -1883,7 +1883,7 @@ BY DEVELOPER CSV: csv/II/II - 21.csv
   [XAAvgCyclomaticModified < 2.380]
    [1.0]
    [1.0]
-Scores: {'recall': 0.5714285714285714, 'precision': 0.4444444444444444, 'fmeasure': 0.5, 'accuracy': 46.666666666666664}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.5714285714285714, 'precision': 0.4444444444444444, 'fmeasure': 0.5}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 28.csv
 [XBMaxCyclomaticModified < 15.000]
@@ -1897,7 +1897,7 @@ BY DEVELOPER CSV: csv/II/II - 28.csv
     [1.0]
     [1.0]
   [0.0]
-Scores: {'recall': 0.7142857142857143, 'precision': 0.8333333333333334, 'fmeasure': 0.7692307692307693, 'accuracy': 80.0}
+Scores: {'accuracy': 80.0, 'recall': 0.7142857142857143, 'precision': 0.8333333333333334, 'fmeasure': 0.7692307692307693}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 104.csv
 [XAAvgLine < 1.850]
@@ -1911,7 +1911,7 @@ BY DEVELOPER CSV: csv/II/II - 104.csv
    [1.0]
    [1.0]
   [0.0]
-Scores: {'recall': 0.3333333333333333, 'precision': 0.5, 'fmeasure': 0.4, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.3333333333333333, 'precision': 0.5, 'fmeasure': 0.4}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 86.csv
 [XACountLineCodeDecl < 1276.000]
@@ -1925,7 +1925,7 @@ BY DEVELOPER CSV: csv/II/II - 86.csv
   [XBAvgCyclomaticModified < 2.270]
    [1.0]
    [0.0]
-Scores: {'recall': 0.375, 'precision': 0.6, 'fmeasure': 0.46153846153846156, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.375, 'precision': 0.6, 'fmeasure': 0.46153846153846156}
 *********************************************************
 BY DEVELOPER CSV: csv/II/II - 124.csv
 [XBAvgCyclomaticModified < 2.200]
@@ -1945,7 +1945,7 @@ BY DEVELOPER CSV: csv/II/II - 124.csv
    [XAAvgCyclomaticModified < 3.280]
     [0.0]
     [0.0]
-Scores: {'recall': 0.7142857142857143, 'precision': 0.625, 'fmeasure': 0.6666666666666666, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.7142857142857143, 'precision': 0.625, 'fmeasure': 0.6666666666666666}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 97.csv
 [XCountOutput < 3.000]
@@ -1959,7 +1959,7 @@ BY DEVELOPER CSV: csv/FE/FE - 97.csv
  [XLAA < 2.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.5833333333333334, 'precision': 0.7, 'fmeasure': 0.6363636363636364, 'accuracy': 46.66666666666666}
+Scores: {'accuracy': 46.66666666666666, 'recall': 0.5833333333333334, 'precision': 0.7, 'fmeasure': 0.6363636363636364}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 58.csv
 [XFDP < 0.420]
@@ -1981,7 +1981,7 @@ BY DEVELOPER CSV: csv/FE/FE - 58.csv
     [0.0]
     [0.0]
    [1.0]
-Scores: {'recall': 0.375, 'precision': 0.375, 'fmeasure': 0.375, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.375, 'precision': 0.375, 'fmeasure': 0.375}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 84.csv
 [XLAA < 5.000]
@@ -2007,7 +2007,7 @@ BY DEVELOPER CSV: csv/FE/FE - 84.csv
   [XLAA < 19.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 9.csv
 [XFDP < 0.430]
@@ -2033,7 +2033,7 @@ BY DEVELOPER CSV: csv/FE/FE - 9.csv
     [1.0]
     [1.0]
    [1.0]
-Scores: {'recall': 0.2857142857142857, 'precision': 0.2857142857142857, 'fmeasure': 0.2857142857142857, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.2857142857142857, 'precision': 0.2857142857142857, 'fmeasure': 0.2857142857142857}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 101.csv
 [XLAA < 5.000]
@@ -2055,7 +2055,7 @@ BY DEVELOPER CSV: csv/FE/FE - 101.csv
   [XLAA < 12.000]
    [0.0]
    [1.0]
-Scores: {'recall': 0.5714285714285714, 'precision': 0.5714285714285714, 'fmeasure': 0.5714285714285714, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 60.0, 'recall': 0.5714285714285714, 'precision': 0.5714285714285714, 'fmeasure': 0.5714285714285714}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 1.csv
 [XCountInput < 2.000]
@@ -2071,7 +2071,7 @@ BY DEVELOPER CSV: csv/FE/FE - 1.csv
  [XLAA < 0.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.4, 'precision': 0.5, 'fmeasure': 0.4444444444444444, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.4, 'precision': 0.5, 'fmeasure': 0.4444444444444444}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 6.csv
 [XCountStmt < 7.000]
@@ -2087,7 +2087,7 @@ BY DEVELOPER CSV: csv/FE/FE - 6.csv
   [XLAA < 13.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.6666666666666666, 'precision': 0.7272727272727273, 'fmeasure': 0.6956521739130435, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.6666666666666666, 'precision': 0.7272727272727273, 'fmeasure': 0.6956521739130435}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 60.csv
 [XFDP < 0.470]
@@ -2105,7 +2105,7 @@ BY DEVELOPER CSV: csv/FE/FE - 60.csv
    [0.0]
    [0.0]
   [1.0]
-Scores: {'recall': 0.5, 'precision': 0.8333333333333334, 'fmeasure': 0.625, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.5, 'precision': 0.8333333333333334, 'fmeasure': 0.625}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 55.csv
 [XCountLine < 7.000]
@@ -2125,7 +2125,7 @@ BY DEVELOPER CSV: csv/FE/FE - 55.csv
  [XLAA < 1.000]
   [1.0]
   [1.0]
-Scores: {'recall': 0.6666666666666666, 'precision': 0.4444444444444444, 'fmeasure': 0.5333333333333333, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.6666666666666666, 'precision': 0.4444444444444444, 'fmeasure': 0.5333333333333333}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 99.csv
 [XLAA < 12.000]
@@ -2147,7 +2147,7 @@ BY DEVELOPER CSV: csv/FE/FE - 99.csv
   [XLAA < 13.000]
    [1.0]
    [1.0]
-Scores: {'recall': 0.2, 'precision': 0.16666666666666666, 'fmeasure': 0.18181818181818182, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.999999999999986, 'recall': 0.2, 'precision': 0.16666666666666666, 'fmeasure': 0.18181818181818182}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 5.csv
 [XFDP < 0.430]
@@ -2169,7 +2169,7 @@ BY DEVELOPER CSV: csv/FE/FE - 5.csv
     [0.0]
     [0.0]
    [0.0]
-Scores: {'recall': 0.7142857142857143, 'precision': 0.7142857142857143, 'fmeasure': 0.7142857142857143, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.7142857142857143, 'precision': 0.7142857142857143, 'fmeasure': 0.7142857142857143}
 *********************************************************
 BY DEVELOPER CSV: csv/FE/FE - 103.csv
 [XCountStmtDecl < 12.000]
@@ -2189,7 +2189,7 @@ BY DEVELOPER CSV: csv/FE/FE - 103.csv
   [XLAA < 13.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.5454545454545454, 'precision': 0.75, 'fmeasure': 0.631578947368421, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.5454545454545454, 'precision': 0.75, 'fmeasure': 0.631578947368421}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 53.csv
 [XSumCyclomatic < 0.380]
@@ -2205,7 +2205,7 @@ BY DEVELOPER CSV: csv/PO/PO - 53.csv
   [XAvgCyclomatic < 8.000]
    [0.0]
    [1.0]
-Scores: {'recall': 0.25, 'precision': 0.25, 'fmeasure': 0.25, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.25, 'precision': 0.25, 'fmeasure': 0.25}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 109.csv
 [XCountClassBase < 6.010]
@@ -2217,7 +2217,7 @@ BY DEVELOPER CSV: csv/PO/PO - 109.csv
  [XConstants < 0.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0, 'accuracy': 66.66666666666666}
+Scores: {'accuracy': 66.66666666666666, 'recall': 0.0, 'precision': 0.0, 'fmeasure': 0.0}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 95.csv
 [XSumCyclomaticStrict < 157.000]
@@ -2235,7 +2235,7 @@ BY DEVELOPER CSV: csv/PO/PO - 95.csv
     [0.0]
    [0.0]
   [1.0]
-Scores: {'recall': 0.3333333333333333, 'precision': 0.3333333333333333, 'fmeasure': 0.3333333333333333, 'accuracy': 46.66666666666666}
+Scores: {'accuracy': 46.66666666666666, 'recall': 0.3333333333333333, 'precision': 0.3333333333333333, 'fmeasure': 0.3333333333333333}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 74.csv
 [XCountDeclMethodPublic < 214.000]
@@ -2255,7 +2255,7 @@ BY DEVELOPER CSV: csv/PO/PO - 74.csv
  [XConstants < 0.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.5, 'precision': 0.3, 'fmeasure': 0.375, 'accuracy': 33.33333333333333}
+Scores: {'accuracy': 33.33333333333333, 'recall': 0.5, 'precision': 0.3, 'fmeasure': 0.375}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 91.csv
 [XCountClassDerived < 6.000]
@@ -2277,7 +2277,7 @@ BY DEVELOPER CSV: csv/PO/PO - 91.csv
   [XConstants < 0.000]
    [0.0]
    [0.0]
-Scores: {'recall': 0.3333333333333333, 'precision': 0.2857142857142857, 'fmeasure': 0.3076923076923077, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.999999999999986, 'recall': 0.3333333333333333, 'precision': 0.2857142857142857, 'fmeasure': 0.3076923076923077}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 46.csv
 [XCountLineCode < 392.000]
@@ -2291,7 +2291,7 @@ BY DEVELOPER CSV: csv/PO/PO - 46.csv
  [XConstants < 0.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.9166666666666666, 'precision': 0.9166666666666666, 'fmeasure': 0.9166666666666666, 'accuracy': 86.66666666666666}
+Scores: {'accuracy': 86.66666666666666, 'recall': 0.9166666666666666, 'precision': 0.9166666666666666, 'fmeasure': 0.9166666666666666}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 64.csv
 [XSumCyclomaticModified < 157.000]
@@ -2315,7 +2315,7 @@ BY DEVELOPER CSV: csv/PO/PO - 64.csv
     [1.0]
     [1.0]
    [0.0]
-Scores: {'recall': 0.25, 'precision': 0.14285714285714285, 'fmeasure': 0.18181818181818182, 'accuracy': 39.99999999999999}
+Scores: {'accuracy': 39.999999999999986, 'recall': 0.25, 'precision': 0.14285714285714285, 'fmeasure': 0.18181818181818182}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 49.csv
 [XCountDeclClassMethod < 10.000]
@@ -2331,7 +2331,7 @@ BY DEVELOPER CSV: csv/PO/PO - 49.csv
  [XConstants < 0.000]
   [1.0]
   [1.0]
-Scores: {'recall': 0.42857142857142855, 'precision': 0.5, 'fmeasure': 0.46153846153846156, 'accuracy': 53.33333333333333}
+Scores: {'accuracy': 53.33333333333333, 'recall': 0.42857142857142855, 'precision': 0.5, 'fmeasure': 0.46153846153846156}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 105.csv
 [XSumCyclomatic < 0.380]
@@ -2347,7 +2347,7 @@ BY DEVELOPER CSV: csv/PO/PO - 105.csv
   [XAvgCyclomatic < 8.000]
    [1.0]
    [0.0]
-Scores: {'recall': 0.5, 'precision': 0.5, 'fmeasure': 0.5, 'accuracy': 73.33333333333333}
+Scores: {'accuracy': 73.33333333333333, 'recall': 0.5, 'precision': 0.5, 'fmeasure': 0.5}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 52.csv
 [XPrimitives < 14.000]
@@ -2363,7 +2363,7 @@ BY DEVELOPER CSV: csv/PO/PO - 52.csv
  [XConstants < 0.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.875, 'precision': 1.0, 'fmeasure': 0.9333333333333333, 'accuracy': 93.33333333333333}
+Scores: {'accuracy': 93.33333333333333, 'recall': 0.875, 'precision': 1.0, 'fmeasure': 0.9333333333333333}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 51.csv
 [XAvgCyclomatic < 26.000]
@@ -2379,7 +2379,7 @@ BY DEVELOPER CSV: csv/PO/PO - 51.csv
  [XConstants < 0.000]
   [0.0]
   [0.0]
-Scores: {'recall': 0.5, 'precision': 0.875, 'fmeasure': 0.6363636363636364, 'accuracy': 46.666666666666664}
+Scores: {'accuracy': 46.666666666666664, 'recall': 0.5, 'precision': 0.875, 'fmeasure': 0.6363636363636364}
 *********************************************************
 BY DEVELOPER CSV: csv/PO/PO - 47.csv
 [XSmell < 127.000]
@@ -2399,7 +2399,7 @@ BY DEVELOPER CSV: csv/PO/PO - 47.csv
    [0.0]
    [0.0]
   [1.0]
-Scores: {'recall': 0.6428571428571429, 'precision': 0.9, 'fmeasure': 0.75, 'accuracy': 59.99999999999999}
+Scores: {'accuracy': 59.999999999999986, 'recall': 0.6428571428571429, 'precision': 0.9, 'fmeasure': 0.75}
 *********************************************************
 BY SMELL CSV GROUP: csv/MM/MM - 41.csv csv/MM/MM - 40.csv csv/MM/MM - 47.csv csv/MM/MM - 45.csv csv/MM/MM - 42.csv csv/MM/MM - 39.csv csv/MM/MM - 74.csv csv/MM/MM - 11.csv csv/MM/MM - 8.csv csv/MM/MM - 43.csv csv/MM/MM - 46.csv csv/MM/MM - 81.csv
 [XCountLineBlank < 32.000]
@@ -2458,272 +2458,3 @@ BY SMELL CSV GROUP: csv/DCL/DCL - 19.csv csv/DCL/DCL - 2.csv csv/DCL/DCL - 77.cs
    [XWMCNAMM < 0.000]
     [0.0]
     [0.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/SG/SG - 51.csv csv/SG/SG - 52.csv csv/SG/SG - 53.csv csv/SG/SG - 5.csv csv/SG/SG - 91.csv csv/SG/SG - 55.csv csv/SG/SG - 49.csv csv/SG/SG - 105.csv csv/SG/SG - 64.csv csv/SG/SG - 56.csv csv/SG/SG - 99.csv csv/SG/SG - 95.csv
-[XCountDeclClassMethod < 1.000]
- [XPercentLackOfCohesion < 3.000]
-  [XCountClassBase < 3.750]
-   [XAvgCyclomaticModified < 1.000]
-    [0.0]
-    [0.0]
-   [XAvgCyclomaticModified < 1.500]
-    [0.0]
-    [0.0]
-  [XAvgCyclomaticModified < 2.270]
-   [XAvgCyclomaticModified < 1.750]
-    [0.0]
-    [0.0]
-   [XAvgCyclomaticModified < 2.270]
-    [0.0]
-    [0.0]
- [XAvgEssential < 3.000]
-  [XCountClassBase < 2.500]
-   [XAvgCyclomaticModified < 1.400]
-    [1.0]
-    [1.0]
-   [XAvgLineComment < 1.330]
-    [0.0]
-    [1.0]
-  [XAvgCyclomaticModified < 4.500]
-   [XAvgCyclomaticModified < 2.500]
-    [0.0]
-    [0.0]
-   [XAvgCyclomaticModified < 4.500]
-    [0.0]
-    [0.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/GC/GC - 103.csv csv/GC/GC - 16.csv csv/GC/GC - 94.csv csv/GC/GC - 84.csv csv/GC/GC - 66.csv csv/GC/GC - 9.csv csv/GC/GC - 102.csv csv/GC/GC - 15.csv csv/GC/GC - 61.csv csv/GC/GC - 62.csv csv/GC/GC - 13.csv csv/GC/GC - 1.csv
-[XInnerClass < 100.000]
- [XCountClassCoupled < 2.000]
-  [XCountDeclMethod < 5.000]
-   [Xatfd < 11.000]
-    [0.0]
-    [0.0]
-   [Xtcc < 2.000]
-    [0.0]
-    [0.0]
-  [Xatfd < 53.000]
-   [Xatfd < 42.000]
-    [0.0]
-    [0.0]
-   [Xatfd < 101.000]
-    [0.0]
-    [0.0]
- [Xatfd < 191.000]
-  [Xatfd < 104.000]
-   [Xatfd < 101.000]
-    [1.0]
-    [1.0]
-   [Xatfd < 104.000]
-    [1.0]
-    [1.0]
-  [Xatfd < 200.000]
-   [Xatfd < 191.000]
-    [1.0]
-    [1.0]
-   [Xatfd < 200.000]
-    [1.0]
-    [1.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/SS/SS - 28.csv csv/SS/SS - 92.csv csv/SS/SS - 69.csv csv/SS/SS - 31.csv csv/SS/SS - 96.csv csv/SS/SS - 7.csv csv/SS/SS - 106.csv csv/SS/SS - 32.csv csv/SS/SS - 107.csv csv/SS/SS - 25.csv csv/SS/SS - 86.csv csv/SS/SS - 2.csv
-[XSmells < 0.210]
- [XCountSemicolon < 32.000]
-  [XCountLineCode < 1.000]
-   [XCountInput < 17.000]
-    [0.0]
-    [0.0]
-   [XCountInput < 7.000]
-    [0.0]
-    [0.0]
-  [XCountLineBlank < 261.000]
-   [XCountInput < 50.000]
-    [1.0]
-    [1.0]
-   [XCountInput < 27.000]
-    [1.0]
-    [1.0]
- [XCountLineCode < 55.000]
-  [XCountInput < 43.000]
-   [XCountInput < 24.000]
-    [1.0]
-    [1.0]
-   [XCountInput < 43.000]
-    [1.0]
-    [1.0]
-  [XCountInput < 35.000]
-   [1.0]
-   [1.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/LM/LM - 95.csv csv/LM/LM - 43.csv csv/LM/LM - 42.csv csv/LM/LM - 46.csv csv/LM/LM - 41.csv csv/LM/LM - 74.csv csv/LM/LM - 64.csv csv/LM/LM - 49.csv csv/LM/LM - 81.csv csv/LM/LM - 51.csv csv/LM/LM - 45.csv csv/LM/LM - 47.csv
-[XCountLineComment < 44.000]
- [Xmloc < 22.000]
-  [XCountLineComment < 34.000]
-   [Xmloc < 9.000]
-    [0.0]
-    [0.0]
-   [Xmloc < 3.000]
-    [0.0]
-    [0.0]
-  [Xmloc < 22.000]
-   [0.0]
-   [0.0]
- [XCountLineBlank < 194.000]
-  [XCountLineCode < 22.000]
-   [XCyclomaticModified < 26.000]
-    [1.0]
-    [1.0]
-   [Xmloc < 11.000]
-    [1.0]
-    [1.0]
-  [Xmloc < 21.000]
-   [0.0]
-   [0.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/MC/MC - 101.csv csv/MC/MC - 99.csv csv/MC/MC - 53.csv csv/MC/MC - 97.csv csv/MC/MC - 52.csv csv/MC/MC - 91.csv csv/MC/MC - 10.csv csv/MC/MC - 58.csv csv/MC/MC - 5.csv csv/MC/MC - 6.csv csv/MC/MC - 55.csv csv/MC/MC - 60.csv
-[XMaxNesting < 3.000]
- [XCountInput < 5.000]
-  [XCountLine < 93.000]
-   [XCountInput < 4.000]
-    [1.0]
-    [1.0]
-   [XCountInput < 4.000]
-    [1.0]
-    [1.0]
-  [XCountStmt < 6.000]
-   [XCountInput < 9.000]
-    [0.0]
-    [0.0]
-   [XCountLine < 6.000]
-    [0.0]
-    [0.0]
- [XCountLine < 5.000]
-  [XCountInput < 5.000]
-   [1.0]
-   [1.0]
-  [XCountInput < 6.000]
-   [XCountLine < 22.000]
-    [1.0]
-    [0.0]
-   [XCountInput < 6.000]
-    [0.0]
-    [0.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/RB/RB - 13.csv csv/RB/RB - 17.csv csv/RB/RB - 19.csv csv/RB/RB - 15.csv csv/RB/RB - 61.csv csv/RB/RB - 94.csv csv/RB/RB - 112.csv csv/RB/RB - 30.csv csv/RB/RB - 102.csv csv/RB/RB - 18.csv csv/RB/RB - 111.csv csv/RB/RB - 16.csv
-[XACountDeclMethodDefault < 50.000]
- [XAAvgLine < 1.500]
-  [XAAvgCyclomaticModified < 21.080]
-   [XAAvgCyclomaticModified < 1.240]
-    [1.0]
-    [1.0]
-   [XAAvgCyclomaticModified < 21.080]
-    [1.0]
-    [1.0]
-  [XAAvgCyclomaticModified < 4.900]
-   [XAAvgCyclomaticModified < 2.540]
-    [1.0]
-    [1.0]
-   [XAAvgCyclomaticModified < 4.900]
-    [1.0]
-    [1.0]
- [XACountClassCoupled < 2.000]
-  [XAMaxEssential < 79.000]
-   [XACountDeclMethodDefault < 55.000]
-    [0.0]
-    [0.0]
-   [XAAvgCyclomaticModified < 10.500]
-    [0.0]
-    [0.0]
-  [XAAvgCyclomaticModified < 3.620]
-   [0.0]
-   [0.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/II/II - 22.csv csv/II/II - 25.csv csv/II/II - 2.csv csv/II/II - 110.csv csv/II/II - 24.csv csv/II/II - 7.csv csv/II/II - 111.csv csv/II/II - 21.csv csv/II/II - 28.csv csv/II/II - 104.csv csv/II/II - 86.csv csv/II/II - 124.csv
-[XAAvgLineCode < 1.230]
- [XBAvgLineBlank < 9.430]
-  [XAAvgCyclomaticModified < 4.000]
-   [XAAvgCyclomaticModified < 1.640]
-    [0.0]
-    [0.0]
-   [XAAvgCyclomaticModified < 4.000]
-    [0.0]
-    [0.0]
-  [XBCountDeclInstanceVariable < 40.000]
-   [XAAvgCyclomaticModified < 1.000]
-    [0.0]
-    [0.0]
-   [XAAvgLineCode < 0.790]
-    [0.0]
-    [0.0]
- [XACountClassBase < 7.270]
-  [XAAvgCyclomaticModified < 8.880]
-   [XAAvgCyclomaticModified < 3.030]
-    [1.0]
-    [1.0]
-   [XAAvgCyclomaticModified < 8.880]
-    [1.0]
-    [1.0]
-  [XBAvgCyclomaticModified < 2.270]
-   [XAAvgCyclomaticModified < 3.280]
-    [0.0]
-    [0.0]
-   [XAAvgCyclomaticModified < 2.380]
-    [1.0]
-    [1.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/FE/FE - 97.csv csv/FE/FE - 58.csv csv/FE/FE - 84.csv csv/FE/FE - 9.csv csv/FE/FE - 101.csv csv/FE/FE - 1.csv csv/FE/FE - 6.csv csv/FE/FE - 60.csv csv/FE/FE - 55.csv csv/FE/FE - 99.csv csv/FE/FE - 5.csv csv/FE/FE - 103.csv
-[XFDP < 0.470]
- [XCountOutput < 3.000]
-  [XLAA < 7.000]
-   [XLAA < 5.000]
-    [1.0]
-    [1.0]
-   [XLAA < 13.000]
-    [1.0]
-    [1.0]
-  [XLAA < 2.000]
-   [0.0]
-   [0.0]
- [XFDP < 0.670]
-  [XLAA < 4.000]
-   [XLAA < 3.000]
-    [0.0]
-    [0.0]
-   [XLAA < 9.000]
-    [0.0]
-    [0.0]
-  [XLAA < 1.000]
-   [XLAA < 0.000]
-    [0.0]
-    [0.0]
-   [XNMO < 7.000]
-    [1.0]
-    [1.0]
-*********************************************************
-BY SMELL CSV GROUP: csv/PO/PO - 53.csv csv/PO/PO - 109.csv csv/PO/PO - 95.csv csv/PO/PO - 74.csv csv/PO/PO - 91.csv csv/PO/PO - 46.csv csv/PO/PO - 64.csv csv/PO/PO - 49.csv csv/PO/PO - 105.csv csv/PO/PO - 52.csv csv/PO/PO - 51.csv csv/PO/PO - 47.csv
-[XAvgCyclomatic < 26.000]
- [XCountClassBase < 6.880]
-  [XAvgCyclomatic < 14.000]
-   [XConstants < 1.000]
-    [1.0]
-    [1.0]
-   [XConstants < 1.000]
-    [1.0]
-    [1.0]
-  [XAvgCyclomaticModified < 4.000]
-   [XConstants < 0.000]
-    [1.0]
-    [1.0]
-   [XAvgLine < 2.000]
-    [0.0]
-    [0.0]
- [XAvgLine < 3.020]
-  [XPrimitives < 54.000]
-   [XConstants < 0.000]
-    [0.0]
-    [0.0]
-   [XConstants < 0.000]
-    [0.0]
-    [0.0]
-  [XConstants < 0.000]
-   [0.0]
-   [0.0]
