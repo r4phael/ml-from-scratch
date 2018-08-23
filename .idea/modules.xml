@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/decisionTree.iml" filepath="$PROJECT_DIR$/.idea/decisionTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ml-from-scratch.iml" filepath="$PROJECT_DIR$/.idea/ml-from-scratch.iml" />
     </modules>
   </component>
 </project>

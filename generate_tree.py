@@ -1,10 +1,11 @@
 import csv
 import glob
 import os
+import pandas as pd
 from decision_tree import generate_confusion_matrix
 from decision_tree import array_generate_confusion_matrix
 
-os.remove('results.txt')
+#os.remove('results.txt')
 
 
 def println(text):
@@ -135,27 +136,67 @@ def g_build_tree(train, max_depth, min_size):
     return root
 
 
+''' Old
 # Print a decision tree
 def g_print_tree(node, headers, depth=0):
     if isinstance(node, dict):
-        println('%s[X%s < %.3f]' % ((depth * ' ', (headers[node['index'] + 1]), node['value'])))
+        println('%s[X%s < %.3f]' % (depth * ' ', (headers[node['index'] + 1]), node['value']))
         g_print_tree(node['left'], headers, depth + 1)
         g_print_tree(node['right'], headers, depth + 1)
     else:
-        println('%s[%s]' % ((depth * ' ', node)))
+        println('%s[%s]' % (depth * ' ', node))
+'''
 
+# Print a decision tree
+def g_print_tree(node, headers, depth=0):
+    global s_tree
+    if isinstance(node, dict):
+        s_tree += (depth * ' ' + '[' +(headers[node['index'] + 1]) + ' < ' + str(node['value']) + ']' + '\n')
+        g_print_tree(node['left'], headers, depth + 1)
+        g_print_tree(node['right'], headers, depth + 1)
+    else:
+        s_tree += (depth * ' ' + '[' + str(node) + '] \n')
 
-def print_by_developer(filename):
-    println("*********************************************************")
-    println("BY DEVELOPER CSV: " + filename)
+def print_by_developer(filename, max_depth, min_size):
+
+    #println("*********************************************************")
+    #println("BY DEVELOPER CSV: " + filename)
     complete_dataset = g_load_csv(filename)
     dataset = complete_dataset['dataset']
     headers = complete_dataset['headers']
+
     for i in range(len(dataset[0])):
         g_str_column_to_float(dataset, i)
-    tree = g_build_tree(dataset, 4, 1)
-    g_print_tree(tree, headers)
 
+    tree = g_build_tree(dataset, max_depth, min_size)
+    g_print_tree(tree, headers)
+    l_results.append(s_tree)
+
+
+for folder in glob.iglob('csv/*'):
+    col_names = ["Type", "Filename", "Folds", "Max_Depth", "Min_Size", "Tree"
+                 "TP", "FP", "FN", "Accuracy", "Precision", "Recall", "Fmeasure"]
+    df = pd.DataFrame(columns=col_names, )
+    #print(df.dtypes)
+    max_depth = 5
+    min_size = 5
+    n_folds = 10
+    s_tree = ''
+    for filename in glob.iglob(folder + '/*.csv'):
+        l_results = list()
+        l_results.extend(("Developer", filename, n_folds, max_depth, min_size))
+        print_by_developer(filename, max_depth, min_size)
+        scores = generate_confusion_matrix(filename, max_depth, min_size, n_folds)
+        l_results.extend(scores.values())
+        print(l_results)
+        print(len(l_results))
+        df.append(l_results, ignore_index=True)
+        for element in l_results:
+            print (element, type(element))
+            #df.loc[len(df)] = l_results
+        break
+println("Data Frame:")
+print(df)
 
 def print_by_smell(files):
     println("*********************************************************")
@@ -169,11 +210,9 @@ def print_by_smell(files):
     g_print_tree(tree, headers)
 
 
-for folder in glob.iglob('csv/*'):
-    for filename in glob.iglob(folder + '/*.csv'):
-        print_by_developer(filename)
-        generate_confusion_matrix(filename)
 
+
+'''
 for folder in glob.iglob('csv/*'):
     files = []
     for filename in glob.iglob(folder + '/*.csv'):
@@ -181,3 +220,4 @@ for folder in glob.iglob('csv/*'):
     if len(files) > 0:
         print_by_smell(files)
         array_generate_confusion_matrix(files)
+'''

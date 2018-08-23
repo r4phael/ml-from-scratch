@@ -2,6 +2,7 @@
 # CART on the Bank Note dataset
 from random import seed
 from random import randrange
+from collections import OrderedDict
 import csv
 
 
@@ -98,7 +99,7 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
     folds = cross_validation_split(dataset, n_folds)
     scores = []
     tp = fp = fn = 0.0
-    mydict = {}
+    mydict = OrderedDict()
     for fold in folds:
         train_set = list(folds)
         train_set.remove(fold)
@@ -115,10 +116,13 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
         tp += confusion_matrix(actual, predicted, 1)
         fp += confusion_matrix(actual, predicted, 2)
         fn += confusion_matrix(actual, predicted, 3)
+    mydict["tp"] = tp
+    mydict["fp"] = fp
+    mydict["fn"] = fn
     mydict["accuracy"] = sum(scores) / len(scores)
-    mydict["fmeasure"] = ((2 * tp) / (2 * tp + fp + fn))
-    mydict["recall"] = tp / (tp + fn) if (tp + fn) > 0 else 0
     mydict["precision"] = tp / (tp + fp) if (tp + fn) > 0 else 0
+    mydict["recall"] = tp / (tp + fn) if (tp + fn) > 0 else 0
+    mydict["f-measure"] = ((2 * tp) / (2 * tp + fp + fn))
     return mydict
 
 
@@ -230,7 +234,7 @@ def decision_tree(train, test, max_depth, min_size, *args):
     return (predictions)
 
 
-def generate_confusion_matrix(filename):
+def generate_confusion_matrix(filename, max_depth, min_size, n_folds):
     # Test CART on Bank Note dataset
     seed(1)
     # load and prepare data
@@ -241,12 +245,10 @@ def generate_confusion_matrix(filename):
     for i in range(len(dataset[0])):
         str_column_to_float(dataset, i)
     # evaluate algorithm
-    n_folds = 5
-    max_depth = 5
-    min_size = 10
     scores = evaluate_algorithm(dataset, decision_tree, n_folds, max_depth, min_size, headers)
-    println('Scores: %s' % scores)
-    print("Accuracy: ", scores['accuracy'], 'Precision: ', scores['precision'], 'Recall: ', scores['recall'], 'Fmeasure: ', scores['fmeasure'])
+    return scores
+    #println('Scores: %s' % scores)
+    #print("Accuracy: ", scores['accuracy'], 'Precision: ', scores['precision'], 'Recall: ', scores['recall'], 'Fmeasure: ', scores['fmeasure'])
 
 
 def array_generate_confusion_matrix(files):
