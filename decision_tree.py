@@ -122,7 +122,7 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
     mydict["accuracy"] = sum(scores) / len(scores)
     mydict["precision"] = tp / (tp + fp) if (tp + fn) > 0 else 0
     mydict["recall"] = tp / (tp + fn) if (tp + fn) > 0 else 0
-    mydict["f-measure"] = ((2 * tp) / (2 * tp + fp + fn))
+    mydict["f-measure"] = ((2 * tp) / (2 * tp + fp + fn)) if (2 * tp + fp + fn) > 0 else 0
     return mydict
 
 

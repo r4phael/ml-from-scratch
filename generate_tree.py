@@ -173,11 +173,10 @@ def print_by_developer(filename, max_depth, min_size):
     l_results.append(s_tree)
 
 
-for folder in glob.iglob('csv/*'):
-    col_names = ["Type", "Filename", "Folds", "Max_Depth", "Min_Size", "Tree"
+col_names = ["Type", "Filename", "Folds", "Max_Depth", "Min_Size", "Tree",
                  "TP", "FP", "FN", "Accuracy", "Precision", "Recall", "Fmeasure"]
-    df = pd.DataFrame(columns=col_names, )
-    #print(df.dtypes)
+df = pd.DataFrame(columns=col_names)
+for folder in glob.iglob('csv/*'):
     max_depth = 5
     min_size = 5
     n_folds = 10
@@ -188,13 +187,8 @@ for folder in glob.iglob('csv/*'):
         print_by_developer(filename, max_depth, min_size)
         scores = generate_confusion_matrix(filename, max_depth, min_size, n_folds)
         l_results.extend(scores.values())
-        print(l_results)
-        print(len(l_results))
-        df.append(l_results, ignore_index=True)
-        for element in l_results:
-            print (element, type(element))
-            #df.loc[len(df)] = l_results
-        break
+        df = df.append(pd.Series(l_results, index=col_names), ignore_index=True)
+        #break
 println("Data Frame:")
 print(df)
 
