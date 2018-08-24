@@ -173,14 +173,29 @@ def print_by_developer(filename, max_depth, min_size):
     l_results.append(s_tree)
 
 
-col_names = ["Type", "Filename", "Folds", "Max_Depth", "Min_Size", "Tree",
-                 "TP", "FP", "FN", "Accuracy", "Precision", "Recall", "Fmeasure"]
+def print_by_smell(files, max_depth, min_size):
+    #println("*********************************************************")
+    #println("BY SMELL CSV GROUP: " + ' '.join(files))
+    complete_dataset = g_load_csv_array(files)
+    dataset = complete_dataset['dataset']
+    headers = complete_dataset['headers']
+    for i in range(len(dataset[0])):
+        g_str_column_to_float(dataset, i)
+
+    tree = g_build_tree(dataset, max_depth, min_size)
+    g_print_tree(tree, headers)
+    l_results.append(s_tree)
+
+
+
+max_depth = 5
+min_size = 5
+n_folds = 10
+s_tree = ''
+col_names = ["Type", "Filename", "Folds", "Max_Depth", "Min_Size", "Tree","TP", "FP", "FN", "Accuracy", "Precision", "Recall", "Fmeasure"]
 df = pd.DataFrame(columns=col_names)
+
 for folder in glob.iglob('csv/*'):
-    max_depth = 5
-    min_size = 5
-    n_folds = 10
-    s_tree = ''
     for filename in glob.iglob(folder + '/*.csv'):
         l_results = list()
         l_results.extend(("Developer", filename, n_folds, max_depth, min_size))
@@ -188,30 +203,24 @@ for folder in glob.iglob('csv/*'):
         scores = generate_confusion_matrix(filename, max_depth, min_size, n_folds)
         l_results.extend(scores.values())
         df = df.append(pd.Series(l_results, index=col_names), ignore_index=True)
-        #break
-println("Data Frame:")
-print(df)
 
-def print_by_smell(files):
-    println("*********************************************************")
-    println("BY SMELL CSV GROUP: " + ' '.join(files))
-    complete_dataset = g_load_csv_array(files)
-    dataset = complete_dataset['dataset']
-    headers = complete_dataset['headers']
-    for i in range(len(dataset[0])):
-        g_str_column_to_float(dataset, i)
-    tree = g_build_tree(dataset, 4, 1)
-    g_print_tree(tree, headers)
+#Output
+df.to_csv("developers.csv", encoding='utf-8')
+df = pd.DataFrame(columns=col_names)
+println("developers.csv generated....")
 
-
-
-
-'''
 for folder in glob.iglob('csv/*'):
     files = []
     for filename in glob.iglob(folder + '/*.csv'):
         files.append(filename)
     if len(files) > 0:
-        print_by_smell(files)
-        array_generate_confusion_matrix(files)
-'''
+        l_results = list()
+        l_results.extend(("Smells", files, n_folds, max_depth, min_size))
+        print_by_smell(files,max_depth, min_size)
+        scores = array_generate_confusion_matrix(files, max_depth, min_size, n_folds)
+        l_results.extend(scores.values())
+        df = df.append(pd.Series(l_results, index=col_names), ignore_index=True)
+
+#Output
+df.to_csv("smells.csv", encoding='utf-8')
+println("smells.csv generated....")

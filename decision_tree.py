@@ -251,7 +251,7 @@ def generate_confusion_matrix(filename, max_depth, min_size, n_folds):
     #print("Accuracy: ", scores['accuracy'], 'Precision: ', scores['precision'], 'Recall: ', scores['recall'], 'Fmeasure: ', scores['fmeasure'])
 
 
-def array_generate_confusion_matrix(files):
+def array_generate_confusion_matrix(files, max_depth, min_size, n_folds):
     # Test CART on Bank Note dataset
     seed(1)
     # load and prepare data
@@ -262,9 +262,7 @@ def array_generate_confusion_matrix(files):
     for i in range(len(dataset[0])):
         str_column_to_float(dataset, i)
     # evaluate algorithm
-    n_folds = 5
-    max_depth = 5
-    min_size = 10
     scores = evaluate_algorithm(dataset, decision_tree, n_folds, max_depth, min_size, headers)
-    print("Accuracy: ", scores['accuracy'], 'Precision: ', scores['precision'], 'Recall: ', scores['recall'], 'Fmeasure: ', scores['fmeasure'])
+    return scores
+    #print("Accuracy: ", scores['accuracy'], 'Precision: ', scores['precision'], 'Recall: ', scores['recall'], 'Fmeasure: ', scores['fmeasure'])
 

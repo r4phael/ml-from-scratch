@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="371c17bc-e4f8-4c6a-b449-fe0fdc1bc4bd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ml-from-scratch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ml-from-scratch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/decision_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/decision_tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generate_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_tree.py" afterDir="false" />
@@ -24,8 +22,8 @@
       <file leaf-file-name="generate_tree.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generate_tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="194" column="42" selection-start-line="194" selection-start-column="42" selection-end-line="194" selection-end-column="42" />
+            <state relative-caret-position="346">
+              <caret line="204" column="80" selection-start-line="204" selection-start-column="80" selection-end-line="204" selection-end-column="80" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -36,8 +34,8 @@
       <file leaf-file-name="decision_tree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/decision_tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+            <state relative-caret-position="241">
+              <caret line="253" column="71" selection-start-line="253" selection-start-column="71" selection-end-line="253" selection-end-column="71" />
               <folding>
                 <element signature="e#44#67#0" expanded="true" />
               </folding>
@@ -197,8 +195,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/decision_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+        <state relative-caret-position="241">
+          <caret line="253" column="71" selection-start-line="253" selection-start-column="71" selection-end-line="253" selection-end-column="71" />
           <folding>
             <element signature="e#44#67#0" expanded="true" />
           </folding>
@@ -207,8 +205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="194" column="42" selection-start-line="194" selection-start-column="42" selection-end-line="194" selection-end-column="42" />
+        <state relative-caret-position="346">
+          <caret line="204" column="80" selection-start-line="204" selection-start-column="80" selection-end-line="204" selection-end-column="80" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
