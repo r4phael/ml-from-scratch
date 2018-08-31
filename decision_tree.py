@@ -80,9 +80,9 @@ def confusion_matrix(actual, predicted, type) :
        if actual[i] == 1.0 and predicted[i] == 1.0:
            tp += 1
        elif actual[i] == 1.0 and predicted[i] == 0.0:
-           fp += 1
-       elif actual[i] == 0.0 and predicted[i] == 1.0:
            fn += 1
+       elif actual[i] == 0.0 and predicted[i] == 1.0:
+           fp += 1
        elif actual[i] == 0.0 and predicted[i] == 0.0:
            tn += 1
    if (type == 1):
