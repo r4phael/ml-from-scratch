@@ -77,13 +77,13 @@ def confusion_matrix(actual, predicted, type) :
    fn = 0.0
    tn = 0.0
    for i in range(len(actual)):
-       if actual[i] == 1 and predicted[i] == 1:
+       if actual[i] == 1.0 and predicted[i] == 1.0:
            tp += 1
-       elif actual[i] == 1 and predicted[i] == 0:
+       elif actual[i] == 1.0 and predicted[i] == 0.0:
            fp += 1
-       elif actual[i] == 0 and predicted[i] == 1:
+       elif actual[i] == 0.0 and predicted[i] == 1.0:
            fn += 1
-       elif actual[i] == 0 and predicted[i] == 0:
+       elif actual[i] == 0.0 and predicted[i] == 0.0:
            tn += 1
    if (type == 1):
        return tp
@@ -95,7 +95,7 @@ def confusion_matrix(actual, predicted, type) :
 
 
 # Evaluate an algorithm using a cross validation split
-def evaluate_algorithm(dataset, algorithm, n_folds, *args):
+def evaluate_algorithm(dataset, algorithm, n_folds, max_depth, min_size, headers):
     folds = cross_validation_split(dataset, n_folds)
     scores = []
     tp = fp = fn = 0.0
@@ -109,7 +109,7 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
             row_copy = list(row)
             test_set.append(row_copy)
             row_copy[-1] = None
-        predicted = algorithm(train_set, test_set, *args)
+        predicted = algorithm(train_set, test_set, max_depth, min_size)
         actual = [row[-1] for row in fold]
         accuracy = accuracy_metric(actual, predicted)
         scores.append(accuracy)
@@ -225,7 +225,7 @@ def predict(node, row):
 
 
 # Classification and Regression Tree Algorithm
-def decision_tree(train, test, max_depth, min_size, *args):
+def decision_tree(train, test, max_depth, min_size):
     tree = build_tree(train, max_depth, min_size)
     predictions = list()
     for row in test:

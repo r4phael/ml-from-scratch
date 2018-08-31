@@ -151,7 +151,7 @@ def g_print_tree(node, headers, depth=0):
 def g_print_tree(node, headers, depth=0):
     global s_tree
     if isinstance(node, dict):
-        s_tree += (depth * ' ' + '[' +(headers[node['index'] + 1]) + ' < ' + str(node['value']) + ']' + '\n')
+        s_tree += (depth * ' ' + '[' +(headers[node['index']]) + ' < ' + str(node['value']) + ']' + '\n')
         g_print_tree(node['left'], headers, depth + 1)
         g_print_tree(node['right'], headers, depth + 1)
     else:
@@ -186,41 +186,60 @@ def print_by_smell(files, max_depth, min_size):
     g_print_tree(tree, headers)
     l_results.append(s_tree)
 
-
-
-max_depth = 5
-min_size = 5
-n_folds = 10
-s_tree = ''
-col_names = ["Type", "Filename", "Folds", "Max_Depth", "Min_Size", "Tree","TP", "FP", "FN", "Accuracy", "Precision", "Recall", "Fmeasure"]
+max_depth = 17
+n_folds = 5
+col_names = ["Type", "Developer", "Smell", "Folds", "Max_Depth", "Min_Size", "Tree","TP", "FP", "FN", "Accuracy", "Precision", "Recall", "Fmeasure"]
 df = pd.DataFrame(columns=col_names)
 
-for folder in glob.iglob('csv/*'):
-    for filename in glob.iglob(folder + '/*.csv'):
-        l_results = list()
-        l_results.extend(("Developer", filename, n_folds, max_depth, min_size))
-        print_by_developer(filename, max_depth, min_size)
-        scores = generate_confusion_matrix(filename, max_depth, min_size, n_folds)
-        l_results.extend(scores.values())
-        df = df.append(pd.Series(l_results, index=col_names), ignore_index=True)
+for i in (range(10)):
+    min_size = i + 1
+    print("min_size: " + str(min_size))
+    for folder in glob.iglob('csv/*'):
+        for filename in glob.iglob(folder + '/*.csv'):
+            print('filename: ' + filename)
+            s_tree = ''
+            l_results = list()
+            smell = filename.split("/")[1]
+            dev = filename.split(" - ")[1].split(".csv")[0]
+            l_results.extend(("Developer", dev, smell, n_folds, max_depth, min_size))
+            print_by_developer(filename, max_depth, min_size)
+            scores = generate_confusion_matrix(filename, max_depth, min_size, n_folds)
+            l_results.extend(scores.values())
+            df = df.append(pd.Series(l_results, index=col_names), ignore_index=True)
 
 #Output
 df.to_csv("developers.csv", encoding='utf-8')
 df = pd.DataFrame(columns=col_names)
 println("developers.csv generated....")
 
-for folder in glob.iglob('csv/*'):
-    files = []
-    for filename in glob.iglob(folder + '/*.csv'):
-        files.append(filename)
-    if len(files) > 0:
-        l_results = list()
-        l_results.extend(("Smells", files, n_folds, max_depth, min_size))
-        print_by_smell(files,max_depth, min_size)
-        scores = array_generate_confusion_matrix(files, max_depth, min_size, n_folds)
-        l_results.extend(scores.values())
-        df = df.append(pd.Series(l_results, index=col_names), ignore_index=True)
+'''
+max_depth = 10
+n_folds = 10
+min_size = 1
+col_names = ["Type", "Developer", "Smell", "Folds", "Max_Depth", "Min_Size", "Tree","TP", "FP", "FN", "Accuracy", "Precision", "Recall", "Fmeasure"]
+df = pd.DataFrame(columns=col_names)
+
+depth = [5,10]
+for i in (depth):
+    max_depth = i
+    print("depth: "+ str(max_depth))
+    for folder in glob.iglob('csv/*'):
+        files = []
+        for filename in glob.iglob(folder + '/*.csv'):
+            files.append(filename)
+        if len(files) > 0:
+            print('filename: ' + filename)
+            s_tree = ''
+            l_results = list()
+            smell = filename.split("/")[1]
+            dev = filename.split(" - ")[1].split(".csv")[0]
+            l_results.extend(("Smells", dev, smell, n_folds, max_depth, min_size))
+            print_by_smell(files, max_depth, min_size)
+            scores = array_generate_confusion_matrix(files, max_depth, min_size, n_folds)
+            l_results.extend(scores.values())
+            df = df.append(pd.Series(l_results, index=col_names), ignore_index=True)
 
 #Output
-df.to_csv("smells.csv", encoding='utf-8')
+df.to_csv("smells_max_depth.csv", encoding='utf-8')
 println("smells.csv generated....")
+'''
