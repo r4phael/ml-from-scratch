@@ -29,6 +29,24 @@ def get_csv_data(filename):
         df = pd.read_csv(filename, index_col=0)
     return df
 
+def get_csv_array_data(filenames):
+    """Get the csv smells data
+    Args
+    ----
+    filenames -- folder with path.
+
+    Returns
+    -------
+    df -- DataFrame with data.
+    """
+    frame = pd.DataFrame()
+    list = []
+    for file in filenames:
+        df = pd.read_csv(file, index_col=None, header=0)
+        list.append(df)
+
+    frame = pd.concat(list)
+    return frame
 
 def encode_target(df, target_column):
     """Add column to df with integers for the target.
@@ -191,7 +209,7 @@ with warnings.catch_warnings():
         if len(files) > 0:
             print('files: ' + str(files))
             s_tree = ''
-            df = get_csv_data(files)
+            df = get_csv_array_data(files)
             df, targets = encode_target(df, "Smell")
             features = list(df.columns[:16])
             y = df["Target"]

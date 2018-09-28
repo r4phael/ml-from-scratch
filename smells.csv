@@ -1,2 +1,15 @@
 ,Type,Developer,Smell,Folds,Criterion,Max_Depth,Max_Leaf_Nodes,Min_Samples_Leaf,Min_Samples_Split,Tree,Accuracy,Precision,Recall,Fmeasure
-0,Type,,csv/LM,5,gini,,,1,2,return True ( 15 examples ),1.0,1.0,1.0,1.0
+0,Type,,LM,5,gini,,,1,2,"if ( CountLineCodeExe <= 43.5 ) {    if ( CountStmtExe <= 31.5 ) {        if ( CountOutput <= 21.0 ) {            if ( CountLineCodeExe <= 37.5 ) {                return False ( 8 examples )                return True ( 4 examples )            }
+            else {                if ( CountLineComment <= 13.0 ) {                    return False ( 8 examples )                    return True ( 4 examples )                }
+                else {                    return False ( 8 examples )                    return True ( 4 examples )                }            }        }
+        else {            if ( CountLineBlank <= 5.5 ) {                return False ( 9 examples )                return True ( 3 examples )            }
+            else {                return False ( 10 examples )                return True ( 2 examples )            }        }    }
+    else {        return False ( 6 examples )        return True ( 6 examples )    }}
+else {    if ( mloc <= 181.0 ) {        if ( CountLineBlank <= 21.5 ) {            if ( Cyclomatic <= 20.0 ) {                if ( CountStmtDecl <= 13.0 ) {                    return False ( 1 examples )                    return True ( 11 examples )                }
+                else {                    if ( CountLineComment <= 18.5 ) {                        return False ( 1 examples )                        return True ( 11 examples )                    }
+                    else {                        return False ( 1 examples )                        return True ( 11 examples )                    }                }            }
+            else {                return True ( 24 examples )            }        }
+        else {            if ( CountOutput <= 31.0 ) {                return False ( 4 examples )                return True ( 8 examples )            }
+            else {                if ( CountLineComment <= 34.0 ) {                    return False ( 2 examples )                    return True ( 10 examples )                }
+                else {                    return False ( 3 examples )                    return True ( 9 examples )                }            }        }    }
+    else {        return False ( 8 examples )        return True ( 4 examples )    }}",0.7720034320034321,0.8634018759018758,0.7561264822134387,0.8037603699170406
