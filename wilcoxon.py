@@ -23,7 +23,6 @@ random.shuffle(l_true)
 
 # While my list is not empty
 for i in range((len(l_true) - len(l_false))):
-    print(i)
     l_true.pop(i)
 
 l_false = sci.zscore(l_false)

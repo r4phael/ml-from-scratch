@@ -56,7 +56,7 @@ def encode_target(df, target_column):
     df -- pandas DataFrame.
     target_column -- column to map to int, producing
                      new Target column.
-
+grid_best
     Returns
     -------
     df_mod -- modified DataFrame.
@@ -196,12 +196,75 @@ def get_code(tree, feature_names, target_names,
     recurse(left, right, threshold, features, 0, 0)
 
 
+
+def decision_tree(dataframe):
+    """Run and generate de results of Decision Tree.
+
+    Args
+    ----
+    dataframe -- Dataframe with the data.
+
+    Returns
+    -------
+    l_results -- [list] with the results
+    """
+
+    df, targets = encode_target(dataframe, "Smell")
+    features = list(df.columns[:16])
+    y = df["Target"]
+    X = df[features]
+
+    # New
+    # print("-- Grid Parameter Search via 5-fold CV")
+    # set of parameters to test
+    param_grid = {"criterion": ["gini", "entropy"],
+                  "min_samples_split": [2, 10, 20],
+                  "max_depth": [None, 2, 5, 10],
+                  "min_samples_leaf": [1, 5, 10],
+                  "max_leaf_nodes": [None, 5, 10, 20],
+                  }
+
+    dt = DecisionTreeClassifier(random_state=99)
+    ts_gs = run_gridsearch(X, y, dt, param_grid, cv=5)
+
+    # print("\n-- Best Parameters:")
+    # for k, v in ts_gs.items():
+    #    print("parameter: {:<20s} setting: {}".format(k, v))
+
+    # Test the retuned best parameters
+    dt_ts_gs = DecisionTreeClassifier(**ts_gs, random_state=99)
+    scores_acc = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='accuracy')
+    scores_pre = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='precision')
+    scores_rec = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='recall')
+    scores_f1 = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='f1')
+
+    # print("mean: {:.3f} (std: {:.3f})".format(scores_acc.mean(),
+    #                                          scores_acc.std()),
+    #                                                end="\n\n")
+
+    #Get pseudo-code of tree
+    get_code(dt_ts_gs.fit(X, y), features, targets)
+
+    #Generate tree with smells
+    visualize_tree(dt_ts_gs, features)
+
+    l_results = ["Type", filename.split(" - ")[1].split(".csv")[0], filename.split("/")[1], 5, ts_gs['criterion'],
+                 ts_gs['max_depth'], ts_gs['max_leaf_nodes'], ts_gs['min_samples_leaf'],
+                 ts_gs['min_samples_split'], s_tree, np.mean(scores_acc), np.mean(scores_pre), np.mean(scores_rec),
+                 np.mean(scores_f1)]
+
+    return (l_results)
+
+
+
 col_names = ["Type", "Developer", "Smell", "Folds", "Criterion", "Max_Depth", "Max_Leaf_Nodes", "Min_Samples_Leaf",
              "Min_Samples_Split", "Tree", "Accuracy", "Precision", "Recall", "Fmeasure"]
-df_results = pd.DataFrame(columns=col_names)
+df_dev_results = pd.DataFrame(columns=col_names)
+df_smells_results = pd.DataFrame(columns=col_names)
 
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore",category=DeprecationWarning)
+
     for folder in glob.iglob('csv/*'):
         files = []
         for filename in glob.iglob(folder + '/*.csv'):
@@ -210,95 +273,19 @@ with warnings.catch_warnings():
             print('files: ' + str(files))
             s_tree = ''
             df = get_csv_array_data(files)
-            df, targets = encode_target(df, "Smell")
-            features = list(df.columns[:16])
-            y = df["Target"]
-            X = df[features]
+            df_smells_results = df_smells_results.append(pd.Series(decision_tree(df), index=col_names), ignore_index=True)
 
-            # New
-            # print("-- Grid Parameter Search via 5-fold CV")
-            # set of parameters to test
-            param_grid = {"criterion": ["gini", "entropy"],
-                          "min_samples_split": [2, 10, 20],
-                          "max_depth": [None, 2, 5, 10],
-                          "min_samples_leaf": [1, 5, 10],
-                          "max_leaf_nodes": [None, 5, 10, 20],
-                          }
+    #Output Smells
+    df_smells_results.to_csv("smells.csv", encoding='utf-8')
+    print("smells.csv generated.... \n")
 
-            dt = DecisionTreeClassifier(random_state=99)
-            ts_gs = run_gridsearch(X, y, dt, param_grid, cv=5)
-
-            # print("\n-- Best Parameters:")
-            # for k, v in ts_gs.items():
-            #    print("parameter: {:<20s} setting: {}".format(k, v))
-
-            # Test the retuned best parameters
-            dt_ts_gs = DecisionTreeClassifier(**ts_gs, random_state=99)
-            scores_acc = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='accuracy')
-            scores_pre = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='precision')
-            scores_rec = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='recall')
-            scores_f1 = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='f1')
-
-            #print("mean: {:.3f} (std: {:.3f})".format(scores_acc.mean(),
-            #                                          scores_acc.std()),
-            #      end="\n\n")
-
-            get_code(dt_ts_gs.fit(X, y), features, targets)
-            l_results = ["Type", '', folder.split("/")[1], 5, ts_gs['criterion'],
-                         ts_gs['max_depth'], ts_gs['max_leaf_nodes'], ts_gs['min_samples_leaf'],
-                         ts_gs['min_samples_split'], s_tree, np.mean(scores_acc), np.mean(scores_pre), np.mean(scores_rec),
-                         np.mean(scores_f1)]
-            df_results = df_results.append(pd.Series(l_results, index=col_names), ignore_index=True)
-
-#Output Smells
-df_results.to_csv("smells.csv", encoding='utf-8')
-print("smells.csv generated.... \n")
-
-with warnings.catch_warnings():
-    warnings.filterwarnings("ignore",category=DeprecationWarning)
     for folder in glob.iglob('csv/*'):
         for filename in glob.iglob(folder + '/*.csv'):
             print("file: " + filename)
             s_tree = ''
             df = get_csv_data(filename)
-            df, targets = encode_target(df, "Smell")
-            features = list(df.columns[:16])
-            y = df["Target"]
-            X = df[features]
+            df_dev_results = df_dev_results.append(pd.Series(decision_tree(df), index=col_names), ignore_index=True)
+    #Output Devs
+    df_dev_results.to_csv("developers.csv", encoding='utf-8')
+    print("developers.csv generated.... \n")
 
-            # New
-            #print("-- Grid Parameter Search via 5-fold CV")
-            # set of parameters to test
-            param_grid = {"criterion": ["gini", "entropy"],
-                          "min_samples_split": [2, 10, 20],
-                          "max_depth": [None, 2, 5, 10],
-                          "min_samples_leaf": [1, 5, 10],
-                          "max_leaf_nodes": [None, 5, 10, 20],
-                          }
-
-            dt = DecisionTreeClassifier(random_state=99)
-            ts_gs = run_gridsearch(X, y, dt, param_grid, cv=5)
-
-            #print("\n-- Best Parameters:")
-            #for k, v in ts_gs.items():
-            #    print("parameter: {:<20s} setting: {}".format(k, v))
-
-            # Test the retuned best parameters
-            dt_ts_gs = DecisionTreeClassifier(**ts_gs,random_state=99)
-            scores_acc = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='accuracy')
-            scores_pre = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='precision')
-            scores_rec = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='recall')
-            scores_f1 = cross_val_score(dt_ts_gs, X, y, cv=5, scoring='f1')
-
-            #print("mean: {:.3f} (std: {:.3f})".format(scores_acc.mean(),
-            #                                          scores_acc.std()),
-            #                                                end="\n\n")
-
-            get_code(dt_ts_gs.fit(X,y), features, targets)
-            l_results = ["Type", filename.split(" - ")[1].split(".csv")[0], filename.split("/")[1], 5, ts_gs['criterion'], ts_gs['max_depth'], ts_gs['max_leaf_nodes'], ts_gs['min_samples_leaf'],
-                         ts_gs['min_samples_split'], s_tree, np.mean(scores_acc), np.mean(scores_pre), np.mean(scores_rec), np.mean(scores_f1)]
-            df_results = df_results.append(pd.Series(l_results, index=col_names), ignore_index=True)
-#Output Devs
-df_results.to_csv("developers.csv", encoding='utf-8')
-df_results = pd.DataFrame(columns=col_names)
-print("developers.csv generated.... \n")

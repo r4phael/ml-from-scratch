@@ -1,5 +1,50 @@
 ,Type,Developer,Smell,Folds,Criterion,Max_Depth,Max_Leaf_Nodes,Min_Samples_Leaf,Min_Samples_Split,Tree,Accuracy,Precision,Recall,Fmeasure
-0,Type,,LM,5,gini,,,1,2,"if ( CountLineCodeExe <= 43.5 ) {    if ( CountStmtExe <= 31.5 ) {        if ( CountOutput <= 21.0 ) {            if ( CountLineCodeExe <= 37.5 ) {                return False ( 8 examples )                return True ( 4 examples )            }
+0,Type,81,MM,5,gini,,10,1,2,"if ( CountClassCoupled <= 0.5 ) {    if ( CountDeclClassVariable <= 2.5 ) {        if ( AvgLineComment <= 1.25 ) {            return False ( 8 examples )            return True ( 4 examples )        }
+        else {            if ( AvgLineBlank <= 0.5 ) {                return False ( 10 examples )                return True ( 2 examples )            }
+            else {                return False ( 9 examples )                return True ( 3 examples )            }        }    }
+    else {        return False ( 22 examples )        return True ( 2 examples )    }}
+else {    if ( CountDeclInstanceVariable <= 2.5 ) {        if ( CountDeclInstanceMethod <= 3.0 ) {            if ( AvgCyclomaticModified <= 1.5 ) {                return False ( 14 examples )                return True ( 22 examples )            }
+            else {                return False ( 3 examples )                return True ( 9 examples )            }        }
+        else {            return False ( 14 examples )            return True ( 10 examples )        }    }
+    else {        if ( CountDeclInstanceMethod <= 1.5 ) {            if ( CountDeclClassVariable <= 0.5 ) {                return False ( 11 examples )                return True ( 1 examples )            }
+            else {                return False ( 10 examples )                return True ( 2 examples )            }        }
+        else {            return False ( 17 examples )            return True ( 7 examples )        }    }}",0.721123981123981,0.6518831168831168,0.4512820512820513,0.5279616036137774
+1,Type,21,DCL,5,gini,,,10,2,"if ( WOC <= 0.10000000149 ) {    if ( PublicAttributes <= 5.0 ) {        if ( AvgCyclomaticStrict <= 1.10000002384 ) {            if ( NOAM <= 5.0 ) {                if ( RFC <= 6.5 ) {                    return False ( 2 examples )                    return True ( 10 examples )                }
+                else {                    if ( NOPVA <= 1.0 ) {                        return False ( 2 examples )                        return True ( 10 examples )                    }
+                    else {                        return False ( 2 examples )                        return True ( 10 examples )                    }                }            }
+            else {                if ( PublicAttributes <= 0.5 ) {                    if ( WMCNAMM <= 2.5 ) {                        return False ( 2 examples )                        return True ( 10 examples )                    }
+                    else {                        return False ( 2 examples )                        return True ( 10 examples )                    }                }
+                else {                    return False ( 1 examples )                    return True ( 11 examples )                }            }        }
+        else {            return False ( 1 examples )            return True ( 11 examples )        }    }
+    else {        return False ( 4 examples )        return True ( 8 examples )    }}
+else {    if ( AvgCyclomaticModified <= 1.29999995232 ) {        if ( AvgCyclomaticStrict <= 1.04999995232 ) {            return False ( 6 examples )            return True ( 6 examples )        }
+        else {            return False ( 7 examples )            return True ( 5 examples )        }    }
+    else {        if ( CFNAMM <= 11.0 ) {            if ( WMCNAMM <= 10.0 ) {                return False ( 9 examples )                return True ( 3 examples )            }
+            else {                return False ( 9 examples )                return True ( 3 examples )            }        }
+        else {            if ( WMCNAMM <= 5.5 ) {                return False ( 11 examples )                return True ( 1 examples )            }
+            else {                if ( AvgCyclomaticModified <= 5.32000017166 ) {                    return False ( 10 examples )                    return True ( 2 examples )                }
+                else {                    return False ( 10 examples )                    return True ( 2 examples )                }            }        }    }}",0.791081081081081,0.8312068048910154,0.7866666666666667,0.8065934065934066
+2,Type,95,SG,5,entropy,,10,1,2,"if ( CountClassDerived <= 0.5 ) {    if ( AvgLineCode <= 5.75 ) {        if ( AvgCyclomaticModified <= 1.25 ) {            return False ( 10 examples )            return True ( 2 examples )        }
+        else {            return False ( 11 examples )            return True ( 1 examples )        }    }
+    else {        if ( CountDeclMethod <= 3.5 ) {            return False ( 10 examples )            return True ( 2 examples )        }
+        else {            return False ( 24 examples )            return True ( 12 examples )        }    }}
+else {    if ( AvgCyclomaticStrict <= 2.875 ) {        if ( AvgLineComment <= 2.34999990463 ) {            return False ( 3 examples )            return True ( 9 examples )        }
+        else {            if ( AvgLineCode <= 1.16499996185 ) {                return False ( 6 examples )                return True ( 6 examples )            }
+            else {                if ( AvgCyclomatic <= 1.10500001907 ) {                    return False ( 5 examples )                    return True ( 7 examples )                }
+                else {                    return False ( 20 examples )                    return True ( 28 examples )                }            }        }    }
+    else {        if ( AvgCyclomaticModified <= 3.5 ) {            return False ( 8 examples )            return True ( 4 examples )        }
+        else {            return False ( 6 examples )            return True ( 6 examples )        }    }}",0.617044187044187,0.5602777777777778,0.5433333333333333,0.5445909058964087
+3,Type,1,GC,5,gini,,5,1,2,"if ( WMCNAMM <= 96.5 ) {    if ( CountClassBase <= 1.5 ) {        return False ( 67 examples )        return True ( 5 examples )    }
+    else {        if ( CountClassBase <= 2.5 ) {            return False ( 18 examples )            return True ( 6 examples )        }
+        else {            return False ( 22 examples )            return True ( 14 examples )        }    }}
+else {    if ( CountClassCoupled <= 25.5 ) {        return False ( 9 examples )        return True ( 15 examples )    }
+    else {        return False ( 3 examples )        return True ( 21 examples )    }}",0.771870441870442,0.7338888888888888,0.5551282051282052,0.6293939393939394
+4,Type,2,SS,5,gini,,5,10,2,"if ( branches <= 19.0 ) {    if ( CountOutput <= 4.0 ) {        return False ( 25 examples )        return True ( 11 examples )    }
+    else {        if ( branches <= 7.5 ) {            return False ( 7 examples )            return True ( 5 examples )        }
+        else {            return False ( 17 examples )            return True ( 31 examples )        }    }}
+else {    if ( CountLineCodeDecl <= 23.5 ) {        return False ( 20 examples )        return True ( 52 examples )    }
+    else {        return True ( 12 examples )    }}",0.673063063063063,0.6996638307928631,0.8387351778656127,0.7610760069583836
+5,Type,47,LM,5,gini,,,1,2,"if ( CountLineCodeExe <= 43.5 ) {    if ( CountStmtExe <= 31.5 ) {        if ( CountOutput <= 21.0 ) {            if ( CountLineCodeExe <= 37.5 ) {                return False ( 8 examples )                return True ( 4 examples )            }
             else {                if ( CountLineComment <= 13.0 ) {                    return False ( 8 examples )                    return True ( 4 examples )                }
                 else {                    return False ( 8 examples )                    return True ( 4 examples )                }            }        }
         else {            if ( CountLineBlank <= 5.5 ) {                return False ( 9 examples )                return True ( 3 examples )            }
@@ -13,3 +58,25 @@ else {    if ( mloc <= 181.0 ) {        if ( CountLineBlank <= 21.5 ) {         
             else {                if ( CountLineComment <= 34.0 ) {                    return False ( 2 examples )                    return True ( 10 examples )                }
                 else {                    return False ( 3 examples )                    return True ( 9 examples )                }            }        }    }
     else {        return False ( 8 examples )        return True ( 4 examples )    }}",0.7720034320034321,0.8634018759018758,0.7561264822134387,0.8037603699170406
+6,Type,60,MC,5,gini,,5,1,2,"if ( chains <= 4.5 ) {    return False ( 19 examples )    return True ( 29 examples )}
+else {    if ( Cyclomatic <= 2.5 ) {        if ( CountSemicolon <= 4.5 ) {            return False ( 30 examples )            return True ( 18 examples )        }
+        else {            return False ( 19 examples )            return True ( 5 examples )        }    }
+    else {        if ( CountLineBlank <= 1.0 ) {            return False ( 5 examples )            return True ( 19 examples )        }
+        else {            return False ( 24 examples )            return True ( 12 examples )        }    }}",0.6544144144144145,0.6342126148705096,0.5882352941176471,0.6040896484919256
+7,Type,16,RB,5,gini,,5,10,2,"if ( ACountDeclInstanceMethod <= 32.5 ) {    if ( AAvgLineComment <= 2.375 ) {        return False ( 1 examples )        return True ( 11 examples )    }
+    else {        if ( AAvgEssential <= 3.34999990463 ) {            if ( AAvgEssential <= 2.61500000954 ) {                return False ( 45 examples )                return True ( 51 examples )            }
+            else {                return False ( 3 examples )                return True ( 9 examples )            }        }
+        else {            return False ( 16 examples )            return True ( 8 examples )        }    }}
+else {    return False ( 27 examples )    return True ( 9 examples )}",0.5798241098241099,0.5677422723475355,0.5477124183006536,0.5502960102960104
+8,Type,124,II,5,gini,,,1,2,return True ( 180 examples ),1.0,1.0,1.0,1.0
+9,Type,103,FE,5,gini,,10,1,2,"if ( LAA <= 0.449999988079 ) {    if ( CountLineComment <= 2.5 ) {        if ( CountLine <= 20.0 ) {            return False ( 3 examples )            return True ( 21 examples )        }
+        else {            if ( CountSemicolon <= 11.5 ) {                return False ( 4 examples )                return True ( 8 examples )            }
+            else {                return False ( 6 examples )                return True ( 18 examples )            }        }    }
+    else {        return False ( 7 examples )        return True ( 5 examples )    }}
+else {    if ( FDP <= 2.5 ) {        if ( NOA <= 3.5 ) {            return False ( 11 examples )            return True ( 1 examples )        }
+        else {            if ( CountStmt <= 5.0 ) {                return False ( 2 examples )                return True ( 10 examples )            }
+            else {                if ( CountInput <= 7.5 ) {                    return False ( 9 examples )                    return True ( 15 examples )                }
+                else {                    return False ( 6 examples )                    return True ( 6 examples )                }            }        }    }
+    else {        if ( CountInput <= 3.5 ) {            return False ( 9 examples )            return True ( 3 examples )        }
+        else {            return False ( 30 examples )            return True ( 6 examples )        }    }}",0.7334620334620334,0.7371055088702148,0.764327485380117,0.7482328482328482
+10,Type,47,PO,5,gini,,,1,2,return True ( 180 examples ),1.0,1.0,1.0,1.0
